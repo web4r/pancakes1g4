@@ -133,5 +133,7 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array(
-    'Disnaker_m'
+    'Disnaker_m',
+    'Login_m',
+    'Users_m'
 );

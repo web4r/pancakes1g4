@@ -6,7 +6,7 @@
                 <h5 class="op-7 mb-3">SISTEM INFORMASI PENGADUAN DAN DATA INFORMASI GENDERS.</h5>
             </div>
             <div class="ml-auto">
-                <a href="#" class="btn btn-info btn-round">Login</a>
+                <a href="<?php echo base_url() ?>login" class="btn btn-secondary btn-round">Login</a>
             </div>
         </div>
     </div>

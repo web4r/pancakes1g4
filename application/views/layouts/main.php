@@ -53,7 +53,7 @@
                                     Data Terpilah
                                 </a>
                                 <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="boards.html">DINAS KETENAGAKERJAAN</a>
+                                    <a class="dropdown-item" href="<?php echo base_url() ?>Frontend/disnaker">DINAS KETENAGAKERJAAN</a>
                                     <a class="dropdown-item" href="projects.html">DINAS SOSIAL</a>
                                     <a class="dropdown-item" href="email-inbox.html">DINAS KESEHATAN</a>
                                     <a class="dropdown-item" href="email-detail.html">DINAS PENDIDIKAN</a>
@@ -216,6 +216,13 @@
             active: function() {
                 sessionStorage.fonts = true;
             }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('#basic-datatables').DataTable({});
+
         });
     </script>
 

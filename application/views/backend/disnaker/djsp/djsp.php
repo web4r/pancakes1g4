@@ -2,7 +2,7 @@
     <div class="page-inner py-5">
         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
             <div>
-                <h2 class="text-white pb-2 fw-bold">Tingkat Partisipasi Angkatan Kerja (TPAK)</h2>
+                <h2 class="text-white pb-2 fw-bold">Daftar Jumlah Serikat Pekerja </h2>
             </div>
             <div class="ml-md-auto py-2 py-md-0">
                 <!-- Button trigger modal -->
@@ -19,7 +19,7 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <form action="<?php echo base_url() ?>Backend/disnaker/save_tpak" method="post">
+                            <form action="<?php echo base_url() ?>Backend/disnaker/save_djsp" method="post">
                                 <div class="modal-body">
                                     <div class="form-group form-group-default">
                                         <label>Pilih Tahun</label>
@@ -194,7 +194,7 @@
                             <tbody>
                                 <?php
                                 $num = 1;
-                                foreach ($tpak as $data) {
+                                foreach ($djsp as $data) {
                                     $status = $data->status;
                                     if ($status) {
                                         $result = '<span class="badge badge-primary">' . $status . '</span>';
@@ -210,11 +210,11 @@
                                         <td><?php echo $data->jumlah ?></td>
                                         <td><?php echo $result ?></td>
                                         <td>
-                                            <a href="<?php echo base_url('Backend/disnaker/edit_tpak/' . $data->id_tpak) ?>" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
+                                            <a href="<?php echo base_url('Backend/disnaker/edit_djsp/' . $data->id_djsp) ?>" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
                                                 <i class="fa fa-edit"></i>
                                             </a>
 
-                                            <a href="<?php echo base_url('Backend/disnaker/delete_tpak/' . $data->id_tpak) ?>" class="btn btn-link btn-danger" data-original-title="Remove" data-toggle="tooltip">
+                                            <a href="<?php echo base_url('Backend/disnaker/delete_djsp/' . $data->id_djsp) ?>" class="btn btn-link btn-danger" data-original-title="Remove" data-toggle="tooltip">
                                                 <i class="fa fa-times"></i>
                                             </a>
 

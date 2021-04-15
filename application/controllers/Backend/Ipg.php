@@ -6,7 +6,7 @@ class Ipg extends CI_Controller
 
     public function index()
     {
-        $data['backend_page'] = "backend/ipg";
+        $data['backend_page'] = "backend/indikator/ipg";
         $this->load->view('layouts/admin', $data);
     }
 }
