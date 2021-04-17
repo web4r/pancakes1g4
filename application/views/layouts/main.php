@@ -67,6 +67,9 @@
                                     <a class="dropdown-item" href="conversations.html">LAPAS</a>
                                     <a class="dropdown-item" href="conversations.html">BPBD KAB.BOGOR</a>
                                     <a class="dropdown-item" href="conversations.html">DISDUKCAPIL KAB.BOGOR</a>
+                                    <a class="dropdown-item" href="conversations.html">DATA PEKKA</a>
+                                    <a class="dropdown-item" href="conversations.html">IDG</a>
+                                    <a class="dropdown-item" href="conversations.html">IPG</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -81,7 +84,7 @@
                                 </a>
                                 <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="starter-template.html">P2WKSS</a>
-                                    <a class="dropdown-item" href="starter-template.html">PEMENANGA APE</a>
+                                    <a class="dropdown-item" href="starter-template.html">PEMENANGAN APE</a>
                                     <a class="dropdown-item" href="starter-template.html">INDUSTRI RUMAHAN</a>
                                 </div>
                             </li>
