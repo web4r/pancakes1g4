@@ -43,8 +43,11 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
+    </div>
+</div>
+<div class="fixed-bottom">
+    <div class="avatar avatar-xxl">
+        <img src="<?php echo base_url() ?>assets/sigadis/geoportal.png" class="img-fluid">
     </div>
 </div>
