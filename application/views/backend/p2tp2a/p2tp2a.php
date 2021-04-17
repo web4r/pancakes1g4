@@ -2,7 +2,7 @@
     <div class="page-inner py-5">
         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
             <div>
-                <h2 class="text-white pb-2 fw-bold">Management Users SIGADIS</h2>
+                <h2 class="text-white pb-2 fw-bold">Data P2TP2A</h2>
             </div>
             <div class="ml-md-auto py-2 py-md-0">
                 <!-- Button trigger modal -->
@@ -19,37 +19,52 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <form action="<?php echo base_url() ?>Admin/save_user" method="post">
+                            <form action="<?php echo base_url() ?>Backend/p2tp2a/save" method="post">
                                 <div class="modal-body">
+
                                     <div class="form-group form-group-default">
-                                        <label>Pilih Role</label>
-                                        <select name="id_role" class="form-control" id="formGroupDefaultSelect">
-                                            <?php
-                                            foreach ($role as $item) {
-                                                ?>
-                                                <option value="<?php echo $item->id_role ?>"><?php echo $item->role_name ?></option>
-                                            <?php } ?>
+                                        <label>Tanggal Pelaporan</label>
+                                        <input name="tgl_laporan" type="date" class="form-control" required="required">
+                                    </div>
+                                    <div class="form-group form-group-default">
+                                        <label>Initial</label>
+                                        <input name="initial" type="text" class="form-control" placeholder="Initial" required="required">
+                                    </div>
+
+                                    <div class="form-group form-group-default">
+                                        <label>Alamat</label>
+                                        <textarea name="alamat" class="form-control" id="exampleFormControlTextarea1" rows="3" required="required"></textarea>
+                                    </div>
+                                    <div class="form-group form-group-default">
+                                        <label>Jenis Kelamin</label>
+                                        <select name="jenis_kelamin" class="form-control" id="formGroupDefaultSelect">
+                                            <option value="1">Laki-laki</option>
+                                            <option value="2">Perempuan</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group form-group-default">
+                                        <label>Usia</label>
+                                        <input name="usia" type="number" class="form-control" placeholder="usia" required="required">
+                                    </div>
+                                    <div class="form-group form-group-default">
+                                        <label>Pendidikan</label>
+                                        <select name="pendidikan" class="form-control" id="formGroupDefaultSelect">
+                                            <option value="1">Belum Sekolah</option>
+                                            <option value="2">SD</option>
+                                            <option value="3">SMP</option>
+                                            <option value="4">SMA</option>
+                                            <option value="5">PT</option>
                                         </select>
                                     </div>
                                     <div class="form-group form-group-default">
-                                        <label>Nama Lengkap</label>
-                                        <input name="fullname" type="text" class="form-control" placeholder="Nama Lengkap">
+                                        <label>Jenis Kekerasan</label>
+                                        <select name="id_kat_kekerasan" class="form-control" id="formGroupDefaultSelect">
+                                            <?php foreach ($kat_kekerasan as $data) { ?>
+                                                <option value="<?php echo $data->id_kat_kekerasan ?>"><?php echo $data->jenis_kekerasan ?></option>
+                                            <?php } ?>
+                                        </select>
                                     </div>
-                                    <div class="form-group form-group-default">
-                                        <label>Email</label>
-                                        <input name="email" type="email" class="form-control" placeholder="Email">
-                                    </div>
-
-                                    <div class="form-group form-group-default">
-                                        <label>Password</label>
-                                        <input name="password" type="password" class="form-control" placeholder="Password">
-                                    </div>
-                                    <div class="form-group form-group-default">
-                                        <label>No Hp/Telepon</label>
-                                        <input name="phone" type="phone" class="form-control" placeholder="No Hp/Telepon">
-                                    </div>
-
-
 
                                 </div>
                                 <div class="modal-footer">
@@ -66,20 +81,12 @@
 </div>
 <div class="page-inner mt--5">
 
+
     <?php if ($this->session->flashdata('success')) : ?>
         <div class="alert alert-success">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>
                 <?php echo $this->session->flashdata('success'); ?>
-            </strong>
-        </div>
-    <?php endif; ?>
-
-    <?php if ($this->session->flashdata('update')) : ?>
-        <div class="alert alert-success">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>
-                <?php echo $this->session->flashdata('update'); ?>
             </strong>
         </div>
     <?php endif; ?>
@@ -93,20 +100,11 @@
         </div>
     <?php endif; ?>
 
-    <?php if ($this->session->flashdata('failed')) : ?>
+    <?php if ($this->session->flashdata('update')) : ?>
         <div class="alert alert-success">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>
-                <?php echo $this->session->flashdata('failed'); ?>
-            </strong>
-        </div>
-    <?php endif; ?>
-
-    <?php if ($this->session->flashdata('errors')) : ?>
-        <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>
-                <?php echo $this->session->flashdata('errors'); ?>
+                <?php echo $this->session->flashdata('update'); ?>
             </strong>
         </div>
     <?php endif; ?>
@@ -120,30 +118,36 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Role User</th>
-                                    <th>Email</th>
-                                    <th>Telepon</th>
+                                    <th>Tanggal</th>
+                                    <th>Initial</th>
+                                    <th>Jenis Kekerasan</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
                                 $num = 1;
-                                foreach ($users as $user) {
+                                foreach ($p2tp2a as $data) {
+
                                     ?>
                                     <tr>
                                         <td><?php echo $num++ ?></td>
-                                        <td><?php echo $user->role_name ?></td>
-                                        <td><?php echo $user->email ?></td>
-                                        <td><?php echo $user->phone ?></td>
+                                        <td><?php echo $data->tgl_laporan ?></td>
+                                        <td><?php echo $data->initial ?></td>
+                                        <td><?php echo $data->jenis_kekerasan ?></td>
+
 
                                         <td>
-                                            <a href="<?php echo base_url() ?>Admin/edit_user/<?php echo $user->id_user ?>" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
+                                            <a href="<?php echo base_url('Backend/p2tp2a/edit/' . $data->id_p2tp2a) ?>" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
                                                 <i class="fa fa-edit"></i>
                                             </a>
 
-                                            <a href="<?php echo base_url() ?>Admin/delete_user/<?php echo $user->id_user ?>" class="btn btn-link btn-danger" data-original-title="Remove" data-toggle="tooltip">
+                                            <a href="<?php echo base_url('Backend/p2tp2a/delete/' . $data->id_p2tp2a) ?>" class="btn btn-link btn-danger" data-original-title="Remove" data-toggle="tooltip">
                                                 <i class="fa fa-times"></i>
+                                            </a>
+
+                                            <a href="<?php echo base_url('Backend/p2tp2a/detail/' . $data->id_p2tp2a) ?>" class="btn btn-link btn-success" data-original-title="Detail" data-toggle="tooltip">
+                                                <i class="fa fa-eye"></i>
                                             </a>
 
                                         </td>

@@ -16,49 +16,49 @@
                         <h2 class="text-black pb-2 fw-bold">FORM EDIT AKAD</h2>
                     </div>
                     <form action="<?php echo base_url() ?>Backend/disnaker/update_akad/<?php echo $akad->id_akad ?>" method="post">
-                        <div class="modal-body">
-
-
-                            <div class="form-group form-group-default">
-                                <label>Pilih Tahun</label>
-                                <?php
-
-                                $data = array(
-                                    '2018' => '2018',
-                                    '2019' => '2019',
-                                    '2020' => '2020',
-                                    '2021' => '2021',
-                                    '2022' => '2022',
-                                    '2023' => '2023',
-                                    '2024' => '2024',
-                                    '2025' => '2025',
-
-
-                                );
-                                echo form_dropdown('tahun', $data, set_value('tahun', $akad->tahun), array('class' => 'form-control'));
-                                ?>
-                            </div>
-                            <div class="form-group form-group-default">
-                                <label>Laki-laki</label>
-                                <input name="pria" type="number" class="form-control" value="<?php echo $akad->pria ?>">
-                            </div>
-                            <div class="form-group form-group-default">
-                                <label>Perempuan</label>
-                                <input name="wanita" type="number" class="form-control" value="<?php echo $akad->wanita ?>">
-                            </div>
-
-                            <div class="form-group form-group-default">
-                                <label>Status</label>
-                                <input name="status" type="text" class="form-control" value="<?php echo $akad->status ?>">
-                            </div>
 
 
 
+                        <div class="form-group form-group-default">
+                            <label>Pilih Tahun</label>
+                            <?php
+
+                            $data = array(
+                                '2018' => '2018',
+                                '2019' => '2019',
+                                '2020' => '2020',
+                                '2021' => '2021',
+                                '2022' => '2022',
+                                '2023' => '2023',
+                                '2024' => '2024',
+                                '2025' => '2025',
+
+
+                            );
+                            echo form_dropdown('tahun', $data, set_value('tahun', $akad->tahun), array('class' => 'form-control'));
+                            ?>
                         </div>
-                        <div class="modal-footer">
-                            <a href="<?php echo base_url('Backend/disnaker/akad') ?>" type="button" class="btn btn-danger" data-dismiss="modal">Kembali</a>
-                            <button type="submit" class="btn btn-primary">Update Data</button>
+                        <div class="form-group form-group-default">
+                            <label>Laki-laki</label>
+                            <input name="pria" type="number" class="form-control" value="<?php echo $akad->pria ?>">
                         </div>
+                        <div class="form-group form-group-default">
+                            <label>Perempuan</label>
+                            <input name="wanita" type="number" class="form-control" value="<?php echo $akad->wanita ?>">
+                        </div>
+
+                        <div class="form-group form-group-default">
+                            <label>Status</label>
+                            <input name="status" type="text" class="form-control" value="<?php echo $akad->status ?>">
+                        </div>
+
+
+
+
+
+                        <a href="<?php echo base_url('Backend/disnaker/akad') ?>" type="button" class="btn btn-danger" data-dismiss="modal">Kembali</a>
+                        <button type="submit" class="btn btn-primary">Update Data</button>
+
                     </form>
 
 

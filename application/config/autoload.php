@@ -135,5 +135,6 @@ $autoload['language'] = array();
 $autoload['model'] = array(
     'Disnaker_m',
     'Login_m',
-    'Users_m'
+    'Users_m',
+    'P2tp2a_m'
 );

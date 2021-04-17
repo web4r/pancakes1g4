@@ -22,8 +22,10 @@
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
 
-                <a href="index.html" class="logo">
-                    <img src="<?php echo base_url('assets/img/logo.svg') ?>" alt="navbar brand" class="navbar-brand">
+                <a href="<?php echo base_url() ?>Admin" class="logo">
+                    <!-- <img src="<?php //echo base_url('assets/sigadis/kpppa2.png') 
+                                    ?>" alt="navbar brand" class="navbar-brand "> -->
+                    <p class="text-medium navbar-brand text-white">SIGADIS</p>
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
@@ -125,6 +127,18 @@
                                 <i class="fa fa-ellipsis-h"></i>
                             </span>
                             <h4 class="text-section">DATA TERPILAH</h4>
+                        </li>
+
+                        <li class="<?php if ($this->uri->segment(2) == "p2tp2a") {
+                                        echo "nav-item active";
+                                    } else {
+                                        echo "nav-item ";
+                                    } ?>">
+                            <a href="<?php echo base_url('Backend/p2tp2a') ?>">
+                                <i class="fas fa-layer-group"></i>
+                                <p>P2TP2A</p>
+
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a data-toggle="collapse" href="#base">

@@ -67,4 +67,68 @@ class Admin extends CI_Controller
             }
         }
     }
+
+    public function delete_user($id_user)
+    {
+
+        $this->Users_m->delete_user($id_user);
+        $this->session->set_flashdata('delete', 'Hapus data Sukses');
+        redirect('Admin/users');
+    }
+
+    public function edit_user($id_user)
+    {
+        $data['role'] = $this->Users_m->get_all_role();
+        $data['user'] = $this->Users_m->getByIdUser($id_user);
+
+        $data['backend_page'] = "backend/users/edit";
+        $this->load->view('layouts/admin', $data);
+    }
+
+    public function update_user($id_user)
+    {
+        $id_role = $this->input->post('id_role');
+        $fullname = $this->input->post('fullname');
+
+        $email = $this->input->post('email');
+        $phone = $this->input->post('phone');
+
+
+
+        $data = array(
+            'id_role' => $id_role,
+            'fullname' => $fullname,
+            'email' => $email,
+            'phone' => $phone,
+        );
+        $update = $this->Users_m->update_user($id_user, $data);
+        if ($update) {
+            $this->session->set_flashdata('update', 'Update data Sukses');
+            redirect('Admin/users/');
+        }
+    }
+
+    public function edit_password($id_user)
+    {
+
+        $data['user'] = $this->Users_m->getByIdUser($id_user);
+
+        $data['backend_page'] = "backend/users/edit_password";
+        $this->load->view('layouts/admin', $data);
+    }
+
+
+    public function update_password($id_user)
+    {
+        $options = ['cost' => 12];
+        $encrypt_pass = password_hash($this->input->post('password'), PASSWORD_BCRYPT, $options);
+        $data = array(
+            'password' => $encrypt_pass
+        );
+        $update = $this->Users_m->update_user($id_user, $data);
+        if ($update) {
+            $this->session->set_flashdata('update', 'Update data Sukses');
+            redirect('Admin/users/');
+        }
+    }
 }

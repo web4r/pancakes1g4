@@ -29,9 +29,9 @@
                     </button>
 
                     <!-- Logo Header -->
-                    <a href="index.html" class="logo d-flex align-items-center">
-                        <img src="<?php echo base_url() ?>assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
-                        <!-- <h5 class="text-white">SIGADIS</h5> -->
+                    <a href="<?php echo base_url() ?>" class="logo d-flex align-items-center">
+                        <!-- <img src="<?php echo base_url() ?>assets/img/logo.svg" alt="navbar brand" class="navbar-brand"> -->
+                        <h5 class="text-white">SIGADIS Kab.Bogor</h5>
                     </a>
                     <!-- End Logo Header -->
 
@@ -53,6 +53,7 @@
                                     Data Terpilah
                                 </a>
                                 <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="projects.html">P2TP2A</a>
                                     <a class="dropdown-item" href="<?php echo base_url() ?>Frontend/disnaker">DINAS KETENAGAKERJAAN</a>
                                     <a class="dropdown-item" href="projects.html">DINAS SOSIAL</a>
                                     <a class="dropdown-item" href="email-inbox.html">DINAS KESEHATAN</a>
@@ -87,6 +88,13 @@
                                     <a class="dropdown-item" href="starter-template.html">PEMENANGAN APE</a>
                                     <a class="dropdown-item" href="starter-template.html">INDUSTRI RUMAHAN</a>
                                 </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://geoportal.bogorkab.go.id/bogapeta/apps/opsdashboard/index.html#/1044ff99ce5a49f1a7ae7a9cc533ec01">
+                                    Geoportal
+                                </a>
+
                             </li>
 
                         </ul>
