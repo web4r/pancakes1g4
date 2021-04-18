@@ -269,6 +269,66 @@
                             </div>
                         </li>
 
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#kejaksaan">
+                                <i class="fas fa-layer-group"></i>
+                                <p>KEJAKSAAN</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="kejaksaan">
+                                <ul class="nav nav-collapse">
+                                    <li class="<?php if ($this->uri->segment(3) == "jaksa") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/kejaksaan/jaksa') ?>">
+                                            <span class="sub-item">Data Jaksa</span>
+                                        </a>
+                                    </li>
+                                    <li class="<?php if ($this->uri->segment(3) == "hakim") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href="<?php echo base_url('Backend/kejaksaan/hakim') ?>">
+                                            <span class="sub-item">Data Hakim</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#pn">
+                                <i class="fas fa-layer-group"></i>
+                                <p>Pengadilan Negeri</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="pn">
+                                <ul class="nav nav-collapse">
+                                    <li class="<?php if ($this->uri->segment(3) == "jaksa") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/pn/jaksa') ?>">
+                                            <span class="sub-item">Data Jaksa</span>
+                                        </a>
+                                    </li>
+                                    <li class="<?php if ($this->uri->segment(3) == "hakim") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href="<?php echo base_url('Backend/pn/hakim') ?>">
+                                            <span class="sub-item">Data Hakim</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
                         <li class="nav-section">
                             <span class="sidebar-mini-icon">
                                 <i class="fa fa-ellipsis-h"></i>
