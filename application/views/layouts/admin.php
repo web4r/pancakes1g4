@@ -329,6 +329,37 @@
                             </div>
                         </li>
 
+
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#agama">
+                                <i class="fas fa-layer-group"></i>
+                                <p>Pengadilan Agama</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="agama">
+                                <ul class="nav nav-collapse">
+                                    <li class="<?php if ($this->uri->segment(3) == "jaksa") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/P_agama/jaksa') ?>">
+                                            <span class="sub-item">Data Jaksa</span>
+                                        </a>
+                                    </li>
+                                    <li class="<?php if ($this->uri->segment(3) == "hakim") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href="<?php echo base_url('Backend/P_agama/hakim') ?>">
+                                            <span class="sub-item">Data Hakim</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
                         <li class="nav-section">
                             <span class="sidebar-mini-icon">
                                 <i class="fa fa-ellipsis-h"></i>

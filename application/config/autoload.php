@@ -139,4 +139,5 @@ $autoload['model'] = array(
     'P2tp2a_m',
     'Kejaksaan_m',
     'Pn_m',
+    'P_agama_m'
 );
