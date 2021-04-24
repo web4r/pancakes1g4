@@ -360,6 +360,69 @@
                             </div>
                         </li>
 
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#disduk">
+                                <i class="fas fa-layer-group"></i>
+                                <p>Disdukcapil</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="disduk">
+                                <ul class="nav nav-collapse">
+                                    <li class="<?php if ($this->uri->segment(3) == "akte") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/disduk/akte') ?>">
+                                            <span class="sub-item">Data Akte Kelahiran</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#bpbd">
+                                <i class="fas fa-layer-group"></i>
+                                <p>BPBD</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="bpbd">
+                                <ul class="nav nav-collapse">
+                                    <li class="<?php if ($this->uri->segment(3) == "pak") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/bpbd/pak') ?>">
+                                            <span class="sub-item">Pengungsi Akibat Konflik</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "pab") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/bpbd/pab') ?>">
+                                            <span class="sub-item">Pengungsi Akibat Bencana</span>
+                                        </a>
+                                    </li>
+                                    <li class="<?php if ($this->uri->segment(3) == "akb") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/bpbd/akb') ?>">
+                                            <span class="sub-item">Anak Korban Bencana</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
                         <li class="nav-section">
                             <span class="sidebar-mini-icon">
                                 <i class="fa fa-ellipsis-h"></i>
