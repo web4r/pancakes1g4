@@ -143,7 +143,7 @@
                         <li class="nav-item">
                             <a data-toggle="collapse" href="#base">
                                 <i class="fas fa-layer-group"></i>
-                                <p>DISNAKER</p>
+                                <p>Disnaker</p>
                                 <span class="caret"></span>
                             </a>
                             <div class="collapse" id="base">
@@ -272,7 +272,7 @@
                         <li class="nav-item">
                             <a data-toggle="collapse" href="#kejaksaan">
                                 <i class="fas fa-layer-group"></i>
-                                <p>KEJAKSAAN</p>
+                                <p>Kejaksaan</p>
                                 <span class="caret"></span>
                             </a>
                             <div class="collapse" id="kejaksaan">
@@ -422,6 +422,122 @@
                                 </ul>
                             </div>
                         </li>
+
+
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#hukum">
+                                <i class="fas fa-layer-group"></i>
+                                <p>Bidang Hukum</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="hukum">
+                                <ul class="nav nav-collapse">
+                                    <li class="<?php if ($this->uri->segment(3) == "pendidikan") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/hukum/pendidikan') ?>">
+                                            <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Pendidikan</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "usia") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/hukum/usia') ?>">
+                                            <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Usia</span>
+                                        </a>
+                                    </li>
+                                    <li class="<?php if ($this->uri->segment(3) == "kasus") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/hukum/kasus') ?>">
+                                            <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Kasus</span>
+                                        </a>
+                                    </li>
+                                    <li class="<?php if ($this->uri->segment(3) == "lapas") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/hukum/lapas') ?>">
+                                            <span class="sub-item">Jumlah Data Jenis Lapas</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#kesbangpol">
+                                <i class="fas fa-layer-group"></i>
+                                <p>Kesbangpol</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="kesbangpol">
+                                <ul class="nav nav-collapse">
+
+                                    <li class="<?php if ($this->uri->segment(3) == "desa") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/kesbangpol/desa') ?>">
+                                            <span class="sub-item">Daftar Jumlah Badan Musyawarah Desa</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "pangkat") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/kesbangpol/pangkat') ?>">
+                                            <span class="sub-item">Daftar Jumlah Badan Pertimbangan dan Pangkat</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "pengurus") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/kesbangpol/pengurus') ?>">
+                                            <span class="sub-item">Daftar Jumlah Badan Pertimbangan dan Pangkat</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "partai") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/kesbangpol/partai') ?>">
+                                            <span class="sub-item">Daftar Jumlah Partai Harian</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "organisasi") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/kesbangpol/organisasi') ?>">
+                                            <span class="sub-item">Daftar Jumlah Pengurus Oraganisasi</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+
 
                         <li class="nav-section">
                             <span class="sidebar-mini-icon">

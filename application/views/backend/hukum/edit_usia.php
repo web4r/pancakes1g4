@@ -1,0 +1,192 @@
+<div class="panel-header bg-primary-gradient">
+    <div class="page-inner py-5">
+    </div>
+</div>
+
+<div class="page-inner mt--5">
+    <div class="row mt--2">
+
+
+
+        <div class="col-lg-6 ml-auto mr-auto">
+
+            <div class="card card-stats  card-round">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2 class="text-black pb-2 fw-bold">FORM EDIT Penghuni Lapas Menurut Jenis Lapas & Usia</h2>
+                    </div>
+                    <form action="<?php echo base_url() ?>Backend/hukum/update_usia/<?php echo $usia->id_lapas_usia ?>" method="post">
+
+                        <div class="form-group form-group-default">
+                            <label>Tahun</label>
+
+                            <?php
+
+                            $data = array(
+                                '2018' => '2018',
+                                '2019' => '2019',
+                                '2020' => '2020',
+                                '2021' => '2021',
+                                '2022' => '2022',
+                                '2023' => '2023',
+                                '2024' => '2024',
+                                '2025' => '2025',
+
+
+
+                            );
+                            echo form_dropdown('tahun', $data, set_value('tahun', $usia->tahun), array('class' => 'form-control'));
+                            ?>
+
+
+                        </div>
+
+                        <div class="form-group form-group-default">
+                            <label>Jenis Lapas</label>
+                            <input name="jenis_lapas" type="text" class="form-control" value="<?php echo $usia->jenis_lapas ?>">
+                        </div>
+                        <div class="form-group form-group-default">
+                            <label>12></label>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>L</label>
+                                        <input name="usia_12_l" type="number" class="form-control" value="<?php echo $usia->usia_12_l ?>">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>P</label>
+                                        <input name="usia_12_p" type="number" class="form-control" value="<?php echo $usia->usia_12_p ?>">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-default">
+                            <label>13 S/D 17 TAHUN</label>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>L</label>
+                                        <input name="usia_17_l" type="number" class="form-control" value="<?php echo $usia->usia_17_l ?>">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>P</label>
+                                        <input name="usia_17_p" type="number" class="form-control" value="<?php echo $usia->usia_17_p ?>">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-default">
+                            <label>18 S/D 22 TAHUN</label>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>L</label>
+                                        <input name="usia_22_l" type="number" class="form-control" value="<?php echo $usia->usia_22_l ?>">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>P</label>
+                                        <input name="usia_22_p" type="number" class="form-control" value="<?php echo $usia->usia_22_p ?>">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-default">
+                            <label>23 S/D 30 TAHUN</label>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>L</label>
+                                        <input name="usia_30_l" type="number" class="form-control" value="<?php echo $usia->usia_30_l ?>">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>P</label>
+                                        <input name="usia_30_p" type="number" class="form-control" value="<?php echo $usia->usia_30_p ?>">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group form-group-default">
+                            <label>31 S/D 39 TAHUN</label>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>L</label>
+                                        <input name="usia_39_l" type="number" class="form-control" value="<?php echo $usia->usia_39_l ?>">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>P</label>
+                                        <input name="usia_39_p" type="number" class="form-control" value="<?php echo $usia->usia_39_p ?>">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-default">
+                            <label>40 S/D 49 TAHUN </label>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>L</label>
+                                        <input name="usia_49_l" type="number" class="form-control" value="<?php echo $usia->usia_49_l ?>">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>P</label>
+                                        <input name="usia_49_p" type="number" class="form-control" value="<?php echo $usia->usia_49_p ?>">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-default">
+                            <label>LEBIH DARI 50 TAHUIN</label>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>L</label>
+                                        <input name="usia_50_l" type="number" class="form-control" value="<?php echo $usia->usia_50_l ?>">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="form-group form-group-default">
+                                        <label>P</label>
+                                        <input name="usia_50_p" type="number" class="form-control" value="<?php echo $usia->usia_50_p ?>">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a href="<?php echo base_url() ?>Backend/hukum/pendidikan" class="btn btn-danger">Kembali</a>
+                        <button type="submit" class="btn btn-primary">Simpan Data</button>
+
+                    </form>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
