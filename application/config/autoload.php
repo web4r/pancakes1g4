@@ -143,5 +143,6 @@ $autoload['model'] = array(
     'Disduk_m',
     'Bpbd_m',
     'Hukum_m',
-    'Kesbangpol_m'
+    'Kesbangpol_m',
+    'Setwan_m',
 );

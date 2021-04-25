@@ -537,6 +537,82 @@
                             </div>
                         </li>
 
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#setwan">
+                                <i class="fas fa-layer-group"></i>
+                                <p>Setwan</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="setwan">
+                                <ul class="nav nav-collapse">
+
+                                    <li class="<?php if ($this->uri->segment(3) == "partai") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/setwan/partai') ?>">
+                                            <span class="sub-item">Angka DPR-RI Menurut Partai</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "komisi") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/setwan/komisi') ?>">
+                                            <span class="sub-item">Angka DPR-RI Menurut Komisi</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "prov_partai") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/setwan/prov_partai') ?>">
+                                            <span class="sub-item">Angka DPRD Provinsi Menurut Partai</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "prov_komisi") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/setwan/prov_komisi') ?>">
+                                            <span class="sub-item">Angka DPRD Provinsi Menurut Komisi</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "kab_partai") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/setwan/kab_partai') ?>">
+                                            <span class="sub-item">Angka DPRD Kabupaten Menurut Partai</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="<?php if ($this->uri->segment(3) == "kab_komisi") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/setwan/kab_komisi') ?>">
+                                            <span class="sub-item">Angka DPRD Kabupaten Menurut Komisi</span>
+                                        </a>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+                        </li>
+
 
 
                         <li class="nav-section">
