@@ -100,7 +100,7 @@
                                 </span>
                                 <h4 class="text-section">INDIKATOR MAKRO</h4>
                             </li>
-
+                            <!-- IPM -->
                             <li class="<?php if ($this->uri->segment(2) == "ipm") {
                                                 echo "nav-item active";
                                             } else {
@@ -111,6 +111,7 @@
                                     <span class="sub-item">IPM</span>
                                 </a>
                             </li>
+                            <!-- IPG -->
                             <li class="<?php if ($this->uri->segment(2) == "ipg") {
                                                 echo "nav-item active";
                                             } else {
@@ -121,899 +122,1805 @@
                                     <span class="sub-item">IPG</span>
                                 </a>
                             </li>
-                        <?php endif; ?>
-                        <li class="nav-section">
-                            <span class="sidebar-mini-icon">
-                                <i class="fa fa-ellipsis-h"></i>
-                            </span>
-                            <h4 class="text-section">DATA TERPILAH</h4>
-                        </li>
 
-                        <li class="<?php if ($this->uri->segment(2) == "p2tp2a") {
-                                        echo "nav-item active";
-                                    } else {
-                                        echo "nav-item ";
-                                    } ?>">
-                            <a href="<?php echo base_url('Backend/p2tp2a') ?>">
-                                <i class="fas fa-layer-group"></i>
-                                <p>P2TP2A</p>
-
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#base">
-                                <i class="fas fa-layer-group"></i>
-                                <p>Disnaker</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="base">
-                                <ul class="nav nav-collapse">
-                                    <li class="<?php if ($this->uri->segment(3) == "tpak") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/disnaker/tpak') ?>">
-                                            <span class="sub-item">Tingkat Partisipasi Angkatan Kerja (TPAK)</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?php if ($this->uri->segment(3) == "kkm") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/disnaker/kkm') ?>">
-                                            <span class="sub-item">Kepala Keluarga Miskin</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "akad") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/disnaker/akad') ?>">
-                                            <span class="sub-item">Tenaga Kerja Migran Antar Kerja Antar Daerah (AKAD)</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?php if ($this->uri->segment(3) == "akan") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/disnaker/akan') ?>">
-                                            <span class="sub-item">Tenaga Kerja Migran Antar Kerja Antar Negara (AKAN)</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "formal") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/disnaker/formal') ?>">
-                                            <span class="sub-item">Pekerja Di Sektor Formal</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "informal") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/disnaker/informal') ?>">
-                                            <span class="sub-item">Pekerja Di Sektor InFormal</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "umk") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/disnaker/umk') ?>">
-                                            <span class="sub-item">Usaha Mikro dan Kecil (UMK)</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "koperasi") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/disnaker/koperasi') ?>">
-                                            <span class="sub-item">Koperasi</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?php if ($this->uri->segment(3) == "kredit") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/disnaker/kredit') ?>">
-                                            <span class="sub-item">Kredit</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "jpa") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/disnaker/jpa') ?>">
-                                            <span class="sub-item">Jumlah Pekerja Anak </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "jpata") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/disnaker/jpata') ?>">
-                                            <span class="sub-item">Jumlah Pekerja Rumah Tangga Anak </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "djsp") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/disnaker/djsp') ?>">
-                                            <span class="sub-item">Daftar Jumlah Serikat Pekerja </span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#kejaksaan">
-                                <i class="fas fa-layer-group"></i>
-                                <p>Kejaksaan</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="kejaksaan">
-                                <ul class="nav nav-collapse">
-                                    <li class="<?php if ($this->uri->segment(3) == "jaksa") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/kejaksaan/jaksa') ?>">
-                                            <span class="sub-item">Data Jaksa</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?php if ($this->uri->segment(3) == "hakim") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/kejaksaan/hakim') ?>">
-                                            <span class="sub-item">Data Hakim</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#pn">
-                                <i class="fas fa-layer-group"></i>
-                                <p>Pengadilan Negeri</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="pn">
-                                <ul class="nav nav-collapse">
-                                    <li class="<?php if ($this->uri->segment(3) == "jaksa") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/pn/jaksa') ?>">
-                                            <span class="sub-item">Data Jaksa</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?php if ($this->uri->segment(3) == "hakim") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/pn/hakim') ?>">
-                                            <span class="sub-item">Data Hakim</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#agama">
-                                <i class="fas fa-layer-group"></i>
-                                <p>Pengadilan Agama</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="agama">
-                                <ul class="nav nav-collapse">
-                                    <li class="<?php if ($this->uri->segment(3) == "jaksa") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/P_agama/jaksa') ?>">
-                                            <span class="sub-item">Data Jaksa</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?php if ($this->uri->segment(3) == "hakim") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href="<?php echo base_url('Backend/P_agama/hakim') ?>">
-                                            <span class="sub-item">Data Hakim</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#disduk">
-                                <i class="fas fa-layer-group"></i>
-                                <p>Disdukcapil</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="disduk">
-                                <ul class="nav nav-collapse">
-                                    <li class="<?php if ($this->uri->segment(3) == "akte") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/disduk/akte') ?>">
-                                            <span class="sub-item">Data Akte Kelahiran</span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#bpbd">
-                                <i class="fas fa-layer-group"></i>
-                                <p>BPBD</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="bpbd">
-                                <ul class="nav nav-collapse">
-                                    <li class="<?php if ($this->uri->segment(3) == "pak") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/bpbd/pak') ?>">
-                                            <span class="sub-item">Pengungsi Akibat Konflik</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "pab") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/bpbd/pab') ?>">
-                                            <span class="sub-item">Pengungsi Akibat Bencana</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?php if ($this->uri->segment(3) == "akb") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/bpbd/akb') ?>">
-                                            <span class="sub-item">Anak Korban Bencana</span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#hukum">
-                                <i class="fas fa-layer-group"></i>
-                                <p>Bidang Hukum</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="hukum">
-                                <ul class="nav nav-collapse">
-                                    <li class="<?php if ($this->uri->segment(3) == "pendidikan") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/hukum/pendidikan') ?>">
-                                            <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Pendidikan</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "usia") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/hukum/usia') ?>">
-                                            <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Usia</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?php if ($this->uri->segment(3) == "kasus") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/hukum/kasus') ?>">
-                                            <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Kasus</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?php if ($this->uri->segment(3) == "lapas") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/hukum/lapas') ?>">
-                                            <span class="sub-item">Jumlah Data Jenis Lapas</span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#kesbangpol">
-                                <i class="fas fa-layer-group"></i>
-                                <p>Kesbangpol</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="kesbangpol">
-                                <ul class="nav nav-collapse">
-
-                                    <li class="<?php if ($this->uri->segment(3) == "desa") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/kesbangpol/desa') ?>">
-                                            <span class="sub-item">Daftar Jumlah Badan Musyawarah Desa</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "pangkat") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/kesbangpol/pangkat') ?>">
-                                            <span class="sub-item">Daftar Jumlah Badan Pertimbangan dan Pangkat</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "pengurus") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/kesbangpol/pengurus') ?>">
-                                            <span class="sub-item">Daftar Jumlah Badan Pertimbangan dan Pangkat</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "partai") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/kesbangpol/partai') ?>">
-                                            <span class="sub-item">Daftar Jumlah Partai Harian</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "organisasi") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/kesbangpol/organisasi') ?>">
-                                            <span class="sub-item">Daftar Jumlah Pengurus Oraganisasi</span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#setwan">
-                                <i class="fas fa-layer-group"></i>
-                                <p>Setwan</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="setwan">
-                                <ul class="nav nav-collapse">
-
-                                    <li class="<?php if ($this->uri->segment(3) == "partai") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/setwan/partai') ?>">
-                                            <span class="sub-item">Angka DPR-RI Menurut Partai</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "komisi") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/setwan/komisi') ?>">
-                                            <span class="sub-item">Angka DPR-RI Menurut Komisi</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "prov_partai") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/setwan/prov_partai') ?>">
-                                            <span class="sub-item">Angka DPRD Provinsi Menurut Partai</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "prov_komisi") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/setwan/prov_komisi') ?>">
-                                            <span class="sub-item">Angka DPRD Provinsi Menurut Komisi</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "kab_partai") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/setwan/kab_partai') ?>">
-                                            <span class="sub-item">Angka DPRD Kabupaten Menurut Partai</span>
-                                        </a>
-                                    </li>
-
-
-                                    <li class="<?php if ($this->uri->segment(3) == "kab_komisi") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/setwan/kab_komisi') ?>">
-                                            <span class="sub-item">Angka DPRD Kabupaten Menurut Komisi</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#disdik">
-                                <i class="fas fa-layer-group"></i>
-                                <p>Disdik</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="disdik">
-                                <ul class="nav nav-collapse">
-
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_apk") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/disdik/disdik_apk') ?>">
-                                            <span class="sub-item">Angka Partisipasi Kasar (APK) Menurut Jenjang Pendidikan SD, SLTP dan SLTA</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_aps") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/disdik/disdik_aps') ?>">
-                                            <span class="sub-item">Angka Partisipasi Sekolah (APS) Menurut Kelompok Umur (7-12, 13-15 dan 16-18 tahun)</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_apm") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/disdik/disdik_apm') ?>">
-                                            <span class="sub-item">Angka Partisipasi Murni (APM) Menurut Jenjang Pendidikan SD, SLTP Dan SLTA</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_jenjang") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/disdik/disdik_jenjang') ?>">
-                                            <span class="sub-item">Angka Putus Sekolah Menurut Jenjang Pendidikan SD, SLTP Dan SLTA</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_sertifikat") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/disdik/disdik_sertifikat') ?>">
-                                            <span class="sub-item">Angka Sertifikat Guru SD, SLTP Dan SLTA</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_paket") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/disdik/disdik_paket') ?>">
-                                            <span class="sub-item">Angka Lulus Paket SD, SLTP Dan SLTA</span>
-                                        </a>
-                                    </li>
-
-
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_sekolah") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/disdik/disdik_sekolah') ?>">
-                                            <span class="sub-item">Rata-Rata Lama Sekolah</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_pt") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/disdik/disdik_pt') ?>">
-                                            <span class="sub-item">Angka Data Pendididkan Beasiswa SLTA dan Perguruan Tinggi</span>
-                                        </a>
-                                    </li>
-
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#dinkes">
-                                <i class="fas fa-layer-group"></i>
-                                <p>Dinkes</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="dinkes">
-                                <ul class="nav nav-collapse">
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_ahp") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_ahp') ?>">
-                                            <span class="sub-item">Angka Harapan Hidup</span>
-                                        </a>
-                                    </li>
-
-
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_kim") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_kim') ?>">
-                                            <span class="sub-item">Jumlah Kematian Ibu Melahirkan</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_pkim") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_pkim') ?>">
-                                            <span class="sub-item">Penyebab Kematian Ibu Melahirkan</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_cpp") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_cpp') ?>">
-                                            <span class="sub-item">Cakupan Pertolongan Persalinan</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_kih") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_kih') ?>">
-                                            <span class="sub-item">Kunjungan Ibu Hamil (K1/K4) </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_tetanus") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_tetanus') ?>">
-                                            <span class="sub-item">Imunisasi Tetanus </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_zat") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_zat') ?>">
-                                            <span class="sub-item">Pemberian Zat Besi </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_kb") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_kb') ?>">
-                                            <span class="sub-item">Keluarga Berencana </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_napza") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_napza') ?>">
-                                            <span class="sub-item">NAPZA </span>
-                                        </a>
-                                    </li>
-
-
-
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#dinsos">
-                                <i class="fas fa-layer-group"></i>
-                                <p>Dinsos</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="dinsos">
-                                <ul class="nav nav-collapse">
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_kkm") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_kkm') ?>">
-                                            <span class="sub-item">Kepala Keluarga Miskin</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_pendidikan") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_pendidikan') ?>">
-                                            <span class="sub-item">Data Penduduk Lansia Menurut Pendidikan</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_aktifitas") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_aktifitas') ?>">
-                                            <span class="sub-item">Data Penduduk Lansia Menurut Aktifitas</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_sakit") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_sakit') ?>">
-                                            <span class="sub-item">Data Penduduk Lansia yang sakit </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_dmp") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_dmp') ?>">
-                                            <span class="sub-item">Data Penyandang Disablitas Menurut Pendidikan </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_dma") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_dma') ?>">
-                                            <span class="sub-item">Data Penyandang Disablitas Menurut Aktifitas</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_jaj") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_jaj') ?>">
-                                            <span class="sub-item">Jumlah Anak Jalan</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_jta") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_jta') ?>">
-                                            <span class="sub-item">Jumlah Terlantar Anak </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_abk") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_abk') ?>">
-                                            <span class="sub-item">Data Anak Berkebutuhan Khusus</span>
-                                        </a>
-                                    </li>
-
-
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#bkpp">
-                                <i class="fas fa-layer-group"></i>
-                                <p>BKPP</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="bkpp">
-                                <ul class="nav nav-collapse">
-
-                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_pusat") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_pusat') ?>">
-                                            <span class="sub-item">Daftar Jumlah PNS Pusat</span>
-                                        </a>
-                                    </li>
-
-
-                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_golongan") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_golongan') ?>">
-                                            <span class="sub-item">Daftar Jumlah PNS Pusat Menurut Golongan</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_kabupaten") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_kabupaten') ?>">
-                                            <span class="sub-item">Daftar Jumlah PNS Kabupaten</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_kab_gol") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_kab_gol') ?>">
-                                            <span class="sub-item">Daftar Jumlah PNS Kabupaten Menurut Golongan</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_camat") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_camat') ?>">
-                                            <span class="sub-item">Daftar Jumlah Camat Kabupaten Menurut Golongan</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_desa") {
-                                                    echo "nav-item active";
-                                                } else {
-                                                    echo "nav-item ";
-                                                } ?>">
-                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_desa') ?>">
-                                            <span class="sub-item">Daftar Jumlah Kepala Desa/Kelurahan Kabupaten Menurut Golongan</span>
-                                        </a>
-                                    </li>
-
-
-
-
-
-                                </ul>
-                            </div>
-                        </li>
-
-
-                        <li class="nav-section">
-                            <span class="sidebar-mini-icon">
-                                <i class="fa fa-ellipsis-h"></i>
-                            </span>
-                            <h4 class="text-section">Setting</h4>
-                        </li>
-                        <?php if ($this->session->id_role == 1) : ?>
-                            <li class="<?php if ($this->uri->segment(2) == "users") {
+                            <li class="nav-section">
+                                <span class="sidebar-mini-icon">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                </span>
+                                <h4 class="text-section">DATA TERPILAH</h4>
+                            </li>
+                            <!-- PTTP2A -->
+                            <li class="<?php if ($this->uri->segment(2) == "p2tp2a") {
                                                 echo "nav-item active";
                                             } else {
                                                 echo "nav-item ";
                                             } ?>">
-                                <a href="<?php echo base_url('Admin/users') ?>">
-                                    <i class="fas fa-users"></i>
-                                    <p>Users</p>
+                                <a href="<?php echo base_url('Backend/p2tp2a') ?>">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>P2TP2A</p>
 
                                 </a>
                             </li>
+                            <!-- DISNAKER -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#base">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Disnaker</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="base">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "tpak") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disnaker/tpak') ?>">
+                                                <span class="sub-item">Tingkat Partisipasi Angkatan Kerja (TPAK)</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "kkm") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/kkm') ?>">
+                                                <span class="sub-item">Kepala Keluarga Miskin</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "akad") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/akad') ?>">
+                                                <span class="sub-item">Tenaga Kerja Migran Antar Kerja Antar Daerah (AKAD)</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "akan") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/akan') ?>">
+                                                <span class="sub-item">Tenaga Kerja Migran Antar Kerja Antar Negara (AKAN)</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "formal") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/formal') ?>">
+                                                <span class="sub-item">Pekerja Di Sektor Formal</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "informal") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/informal') ?>">
+                                                <span class="sub-item">Pekerja Di Sektor InFormal</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "umk") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/umk') ?>">
+                                                <span class="sub-item">Usaha Mikro dan Kecil (UMK)</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "koperasi") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/koperasi') ?>">
+                                                <span class="sub-item">Koperasi</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "kredit") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/kredit') ?>">
+                                                <span class="sub-item">Kredit</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "jpa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/jpa') ?>">
+                                                <span class="sub-item">Jumlah Pekerja Anak </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "jpata") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/jpata') ?>">
+                                                <span class="sub-item">Jumlah Pekerja Rumah Tangga Anak </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "djsp") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/djsp') ?>">
+                                                <span class="sub-item">Daftar Jumlah Serikat Pekerja </span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- KEJAKSAAN -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#kejaksaan">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Kejaksaan</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="kejaksaan">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "jaksa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kejaksaan/jaksa') ?>">
+                                                <span class="sub-item">Data Jaksa</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "hakim") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/kejaksaan/hakim') ?>">
+                                                <span class="sub-item">Data Hakim</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- PENGADILAN NEGERI -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#pn">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Pengadilan Negeri</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="pn">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "jaksa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/pn/jaksa') ?>">
+                                                <span class="sub-item">Data Jaksa</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "hakim") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/pn/hakim') ?>">
+                                                <span class="sub-item">Data Hakim</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- PENGADILAN AGAMA -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#agama">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Pengadilan Agama</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="agama">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "jaksa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/P_agama/jaksa') ?>">
+                                                <span class="sub-item">Data Jaksa</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "hakim") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/P_agama/hakim') ?>">
+                                                <span class="sub-item">Data Hakim</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- DISDUKCAPIL -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#disduk">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Disdukcapil</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="disduk">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "akte") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disduk/akte') ?>">
+                                                <span class="sub-item">Data Akte Kelahiran</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- BPBD -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#bpbd">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>BPBD</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="bpbd">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "pak") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bpbd/pak') ?>">
+                                                <span class="sub-item">Pengungsi Akibat Konflik</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "pab") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bpbd/pab') ?>">
+                                                <span class="sub-item">Pengungsi Akibat Bencana</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "akb") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bpbd/akb') ?>">
+                                                <span class="sub-item">Anak Korban Bencana</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- BIDANG HUKUM -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#hukum">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Bidang Hukum</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="hukum">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "pendidikan") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/hukum/pendidikan') ?>">
+                                                <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Pendidikan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "usia") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/hukum/usia') ?>">
+                                                <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Usia</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "kasus") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/hukum/kasus') ?>">
+                                                <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Kasus</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "lapas") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/hukum/lapas') ?>">
+                                                <span class="sub-item">Jumlah Data Jenis Lapas</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- KESBANGPOL -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#kesbangpol">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Kesbangpol</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="kesbangpol">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "desa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kesbangpol/desa') ?>">
+                                                <span class="sub-item">Daftar Jumlah Badan Musyawarah Desa</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "pangkat") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kesbangpol/pangkat') ?>">
+                                                <span class="sub-item">Daftar Jumlah Badan Pertimbangan dan Pangkat</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "pengurus") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kesbangpol/pengurus') ?>">
+                                                <span class="sub-item">Daftar Jumlah Badan Pertimbangan dan Pangkat</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "partai") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kesbangpol/partai') ?>">
+                                                <span class="sub-item">Daftar Jumlah Partai Harian</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "organisasi") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kesbangpol/organisasi') ?>">
+                                                <span class="sub-item">Daftar Jumlah Pengurus Oraganisasi</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- SETWAN -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#setwan">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Setwan</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="setwan">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "partai") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/partai') ?>">
+                                                <span class="sub-item">Angka DPR-RI Menurut Partai</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "komisi") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/komisi') ?>">
+                                                <span class="sub-item">Angka DPR-RI Menurut Komisi</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "prov_partai") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/prov_partai') ?>">
+                                                <span class="sub-item">Angka DPRD Provinsi Menurut Partai</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "prov_komisi") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/prov_komisi') ?>">
+                                                <span class="sub-item">Angka DPRD Provinsi Menurut Komisi</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "kab_partai") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/kab_partai') ?>">
+                                                <span class="sub-item">Angka DPRD Kabupaten Menurut Partai</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li class="<?php if ($this->uri->segment(3) == "kab_komisi") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/kab_komisi') ?>">
+                                                <span class="sub-item">Angka DPRD Kabupaten Menurut Komisi</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- DISDIK -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#disdik">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Disdik</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="disdik">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_apk") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_apk') ?>">
+                                                <span class="sub-item">Angka Partisipasi Kasar (APK) Menurut Jenjang Pendidikan SD, SLTP dan SLTA</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_aps") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_aps') ?>">
+                                                <span class="sub-item">Angka Partisipasi Sekolah (APS) Menurut Kelompok Umur (7-12, 13-15 dan 16-18 tahun)</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_apm") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_apm') ?>">
+                                                <span class="sub-item">Angka Partisipasi Murni (APM) Menurut Jenjang Pendidikan SD, SLTP Dan SLTA</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_jenjang") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_jenjang') ?>">
+                                                <span class="sub-item">Angka Putus Sekolah Menurut Jenjang Pendidikan SD, SLTP Dan SLTA</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_sertifikat") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_sertifikat') ?>">
+                                                <span class="sub-item">Angka Sertifikat Guru SD, SLTP Dan SLTA</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_paket") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_paket') ?>">
+                                                <span class="sub-item">Angka Lulus Paket SD, SLTP Dan SLTA</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_sekolah") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_sekolah') ?>">
+                                                <span class="sub-item">Rata-Rata Lama Sekolah</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_pt") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_pt') ?>">
+                                                <span class="sub-item">Angka Data Pendididkan Beasiswa SLTA dan Perguruan Tinggi</span>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- DINKES -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#dinkes">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Dinkes</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="dinkes">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_ahp") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_ahp') ?>">
+                                                <span class="sub-item">Angka Harapan Hidup</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_kim") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_kim') ?>">
+                                                <span class="sub-item">Jumlah Kematian Ibu Melahirkan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_pkim") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_pkim') ?>">
+                                                <span class="sub-item">Penyebab Kematian Ibu Melahirkan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_cpp") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_cpp') ?>">
+                                                <span class="sub-item">Cakupan Pertolongan Persalinan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_kih") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_kih') ?>">
+                                                <span class="sub-item">Kunjungan Ibu Hamil (K1/K4) </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_tetanus") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_tetanus') ?>">
+                                                <span class="sub-item">Imunisasi Tetanus </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_zat") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_zat') ?>">
+                                                <span class="sub-item">Pemberian Zat Besi </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_kb") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_kb') ?>">
+                                                <span class="sub-item">Keluarga Berencana </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_napza") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_napza') ?>">
+                                                <span class="sub-item">NAPZA </span>
+                                            </a>
+                                        </li>
+
+
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- DINSOS -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#dinsos">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Dinsos</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="dinsos">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_kkm") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_kkm') ?>">
+                                                <span class="sub-item">Kepala Keluarga Miskin</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_pendidikan") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_pendidikan') ?>">
+                                                <span class="sub-item">Data Penduduk Lansia Menurut Pendidikan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_aktifitas") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_aktifitas') ?>">
+                                                <span class="sub-item">Data Penduduk Lansia Menurut Aktifitas</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_sakit") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_sakit') ?>">
+                                                <span class="sub-item">Data Penduduk Lansia yang sakit </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_dmp") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_dmp') ?>">
+                                                <span class="sub-item">Data Penyandang Disablitas Menurut Pendidikan </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_dma") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_dma') ?>">
+                                                <span class="sub-item">Data Penyandang Disablitas Menurut Aktifitas</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_jaj") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_jaj') ?>">
+                                                <span class="sub-item">Jumlah Anak Jalan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_jta") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_jta') ?>">
+                                                <span class="sub-item">Jumlah Terlantar Anak </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_abk") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_abk') ?>">
+                                                <span class="sub-item">Data Anak Berkebutuhan Khusus</span>
+                                            </a>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- BKPP -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#bkpp">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>BKPP</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="bkpp">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_pusat") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_pusat') ?>">
+                                                <span class="sub-item">Daftar Jumlah PNS Pusat</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_golongan") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_golongan') ?>">
+                                                <span class="sub-item">Daftar Jumlah PNS Pusat Menurut Golongan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_kabupaten") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_kabupaten') ?>">
+                                                <span class="sub-item">Daftar Jumlah PNS Kabupaten</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_kab_gol") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_kab_gol') ?>">
+                                                <span class="sub-item">Daftar Jumlah PNS Kabupaten Menurut Golongan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_camat") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_camat') ?>">
+                                                <span class="sub-item">Daftar Jumlah Camat Kabupaten Menurut Golongan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_desa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_desa') ?>">
+                                                <span class="sub-item">Daftar Jumlah Kepala Desa/Kelurahan Kabupaten Menurut Golongan</span>
+                                            </a>
+                                        </li>
+
+
+
+
+
+                                    </ul>
+                                </div>
+                            </li>
+
+
+
+                            <!-- SETTING DAN USER MANAGEMENT -->
+                            <li class="nav-section">
+                                <span class="sidebar-mini-icon">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                </span>
+                                <h4 class="text-section">Setting</h4>
+                            </li>
+                            <?php if ($this->session->id_role == 1) : ?>
+                                <li class="<?php if ($this->uri->segment(2) == "users") {
+                                                        echo "nav-item active";
+                                                    } else {
+                                                        echo "nav-item ";
+                                                    } ?>">
+                                    <a href="<?php echo base_url('Admin/users') ?>">
+                                        <i class="fas fa-users"></i>
+                                        <p>Users</p>
+
+                                    </a>
+                                </li>
+                            <?php endif; ?>
                         <?php endif; ?>
+
+
+
+
+
+                        <?php if ($this->session->id_role == 2) : ?>
+                            <!-- DISNAKER -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#base">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Disnaker</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="base">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "tpak") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disnaker/tpak') ?>">
+                                                <span class="sub-item">Tingkat Partisipasi Angkatan Kerja (TPAK)</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "kkm") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/kkm') ?>">
+                                                <span class="sub-item">Kepala Keluarga Miskin</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "akad") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/akad') ?>">
+                                                <span class="sub-item">Tenaga Kerja Migran Antar Kerja Antar Daerah (AKAD)</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "akan") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/akan') ?>">
+                                                <span class="sub-item">Tenaga Kerja Migran Antar Kerja Antar Negara (AKAN)</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "formal") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/formal') ?>">
+                                                <span class="sub-item">Pekerja Di Sektor Formal</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "informal") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/informal') ?>">
+                                                <span class="sub-item">Pekerja Di Sektor InFormal</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "umk") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/umk') ?>">
+                                                <span class="sub-item">Usaha Mikro dan Kecil (UMK)</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "koperasi") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/koperasi') ?>">
+                                                <span class="sub-item">Koperasi</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "kredit") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/kredit') ?>">
+                                                <span class="sub-item">Kredit</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "jpa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/jpa') ?>">
+                                                <span class="sub-item">Jumlah Pekerja Anak </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "jpata") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/jpata') ?>">
+                                                <span class="sub-item">Jumlah Pekerja Rumah Tangga Anak </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "djsp") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/disnaker/djsp') ?>">
+                                                <span class="sub-item">Daftar Jumlah Serikat Pekerja </span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 3) : ?>
+                            <!-- DINSOS -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#dinsos">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Dinsos</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="dinsos">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_kkm") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_kkm') ?>">
+                                                <span class="sub-item">Kepala Keluarga Miskin</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_pendidikan") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_pendidikan') ?>">
+                                                <span class="sub-item">Data Penduduk Lansia Menurut Pendidikan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_aktifitas") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_aktifitas') ?>">
+                                                <span class="sub-item">Data Penduduk Lansia Menurut Aktifitas</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_sakit") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_sakit') ?>">
+                                                <span class="sub-item">Data Penduduk Lansia yang sakit </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_dmp") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_dmp') ?>">
+                                                <span class="sub-item">Data Penyandang Disablitas Menurut Pendidikan </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_dma") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_dma') ?>">
+                                                <span class="sub-item">Data Penyandang Disablitas Menurut Aktifitas</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_jaj") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_jaj') ?>">
+                                                <span class="sub-item">Jumlah Anak Jalan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_jta") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_jta') ?>">
+                                                <span class="sub-item">Jumlah Terlantar Anak </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinsos_abk") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinsos/dinsos_abk') ?>">
+                                                <span class="sub-item">Data Anak Berkebutuhan Khusus</span>
+                                            </a>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 4) : ?>
+                            <!-- DINKES -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#dinkes">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Dinkes</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="dinkes">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_ahp") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_ahp') ?>">
+                                                <span class="sub-item">Angka Harapan Hidup</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_kim") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_kim') ?>">
+                                                <span class="sub-item">Jumlah Kematian Ibu Melahirkan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_pkim") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_pkim') ?>">
+                                                <span class="sub-item">Penyebab Kematian Ibu Melahirkan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_cpp") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_cpp') ?>">
+                                                <span class="sub-item">Cakupan Pertolongan Persalinan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_kih") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_kih') ?>">
+                                                <span class="sub-item">Kunjungan Ibu Hamil (K1/K4) </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_tetanus") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_tetanus') ?>">
+                                                <span class="sub-item">Imunisasi Tetanus </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_zat") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_zat') ?>">
+                                                <span class="sub-item">Pemberian Zat Besi </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_kb") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_kb') ?>">
+                                                <span class="sub-item">Keluarga Berencana </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_napza") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/dinkes/dinkes_napza') ?>">
+                                                <span class="sub-item">NAPZA </span>
+                                            </a>
+                                        </li>
+
+
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 5) : ?>
+                            <!-- DISDIK -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#disdik">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Disdik</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="disdik">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_apk") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_apk') ?>">
+                                                <span class="sub-item">Angka Partisipasi Kasar (APK) Menurut Jenjang Pendidikan SD, SLTP dan SLTA</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_aps") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_aps') ?>">
+                                                <span class="sub-item">Angka Partisipasi Sekolah (APS) Menurut Kelompok Umur (7-12, 13-15 dan 16-18 tahun)</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_apm") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_apm') ?>">
+                                                <span class="sub-item">Angka Partisipasi Murni (APM) Menurut Jenjang Pendidikan SD, SLTP Dan SLTA</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_jenjang") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_jenjang') ?>">
+                                                <span class="sub-item">Angka Putus Sekolah Menurut Jenjang Pendidikan SD, SLTP Dan SLTA</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_sertifikat") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_sertifikat') ?>">
+                                                <span class="sub-item">Angka Sertifikat Guru SD, SLTP Dan SLTA</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_paket") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_paket') ?>">
+                                                <span class="sub-item">Angka Lulus Paket SD, SLTP Dan SLTA</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_sekolah") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_sekolah') ?>">
+                                                <span class="sub-item">Rata-Rata Lama Sekolah</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "disdik_pt") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disdik/disdik_pt') ?>">
+                                                <span class="sub-item">Angka Data Pendididkan Beasiswa SLTA dan Perguruan Tinggi</span>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 6) : ?>
+                            <!-- SETWAN -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#setwan">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Setwan</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="setwan">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "partai") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/partai') ?>">
+                                                <span class="sub-item">Angka DPR-RI Menurut Partai</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "komisi") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/komisi') ?>">
+                                                <span class="sub-item">Angka DPR-RI Menurut Komisi</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "prov_partai") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/prov_partai') ?>">
+                                                <span class="sub-item">Angka DPRD Provinsi Menurut Partai</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "prov_komisi") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/prov_komisi') ?>">
+                                                <span class="sub-item">Angka DPRD Provinsi Menurut Komisi</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "kab_partai") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/kab_partai') ?>">
+                                                <span class="sub-item">Angka DPRD Kabupaten Menurut Partai</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li class="<?php if ($this->uri->segment(3) == "kab_komisi") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/setwan/kab_komisi') ?>">
+                                                <span class="sub-item">Angka DPRD Kabupaten Menurut Komisi</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 7) : ?>
+                            <!-- KEJAKSAAN -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#kejaksaan">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Kejaksaan</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="kejaksaan">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "jaksa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kejaksaan/jaksa') ?>">
+                                                <span class="sub-item">Data Jaksa</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "hakim") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/kejaksaan/hakim') ?>">
+                                                <span class="sub-item">Data Hakim</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 8) : ?>
+                            <!-- PENGADILAN NEGERI -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#pn">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Pengadilan Negeri</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="pn">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "jaksa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/pn/jaksa') ?>">
+                                                <span class="sub-item">Data Jaksa</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "hakim") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/pn/hakim') ?>">
+                                                <span class="sub-item">Data Hakim</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 9) : ?>
+                            <!-- PENGADILAN AGAMA -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#agama">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Pengadilan Agama</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="agama">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "jaksa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/P_agama/jaksa') ?>">
+                                                <span class="sub-item">Data Jaksa</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "hakim") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href="<?php echo base_url('Backend/P_agama/hakim') ?>">
+                                                <span class="sub-item">Data Hakim</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 10) : ?>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 11) : ?>
+                            <!-- BKPP -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#bkpp">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>BKPP</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="bkpp">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_pusat") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_pusat') ?>">
+                                                <span class="sub-item">Daftar Jumlah PNS Pusat</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_golongan") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_golongan') ?>">
+                                                <span class="sub-item">Daftar Jumlah PNS Pusat Menurut Golongan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_kabupaten") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_kabupaten') ?>">
+                                                <span class="sub-item">Daftar Jumlah PNS Kabupaten</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_kab_gol") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_kab_gol') ?>">
+                                                <span class="sub-item">Daftar Jumlah PNS Kabupaten Menurut Golongan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_camat") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_camat') ?>">
+                                                <span class="sub-item">Daftar Jumlah Camat Kabupaten Menurut Golongan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "bkpp_desa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bkpp/bkpp_desa') ?>">
+                                                <span class="sub-item">Daftar Jumlah Kepala Desa/Kelurahan Kabupaten Menurut Golongan</span>
+                                            </a>
+                                        </li>
+
+
+
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 12) : ?>
+                            <!-- KESBANGPOL -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#kesbangpol">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Kesbangpol</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="kesbangpol">
+                                    <ul class="nav nav-collapse">
+
+                                        <li class="<?php if ($this->uri->segment(3) == "desa") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kesbangpol/desa') ?>">
+                                                <span class="sub-item">Daftar Jumlah Badan Musyawarah Desa</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "pangkat") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kesbangpol/pangkat') ?>">
+                                                <span class="sub-item">Daftar Jumlah Badan Pertimbangan dan Pangkat</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "pengurus") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kesbangpol/pengurus') ?>">
+                                                <span class="sub-item">Daftar Jumlah Badan Pertimbangan dan Pangkat</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "partai") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kesbangpol/partai') ?>">
+                                                <span class="sub-item">Daftar Jumlah Partai Harian</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "organisasi") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/kesbangpol/organisasi') ?>">
+                                                <span class="sub-item">Daftar Jumlah Pengurus Oraganisasi</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+
+                        <?php if ($this->session->id_role == 13) : ?>
+                            <!-- BIDANG HUKUM -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#hukum">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Bidang Hukum</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="hukum">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "pendidikan") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/hukum/pendidikan') ?>">
+                                                <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Pendidikan</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "usia") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/hukum/usia') ?>">
+                                                <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Usia</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "kasus") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/hukum/kasus') ?>">
+                                                <span class="sub-item">Penghuni Lapas Menurut Jenis Lapas & Kasus</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "lapas") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/hukum/lapas') ?>">
+                                                <span class="sub-item">Jumlah Data Jenis Lapas</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 14) : ?>
+                            <!-- BPBD -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#bpbd">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>BPBD</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="bpbd">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "pak") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bpbd/pak') ?>">
+                                                <span class="sub-item">Pengungsi Akibat Konflik</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="<?php if ($this->uri->segment(3) == "pab") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bpbd/pab') ?>">
+                                                <span class="sub-item">Pengungsi Akibat Bencana</span>
+                                            </a>
+                                        </li>
+                                        <li class="<?php if ($this->uri->segment(3) == "akb") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/bpbd/akb') ?>">
+                                                <span class="sub-item">Anak Korban Bencana</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($this->session->id_role == 15) : ?>
+                            <!-- DISDUKCAPIL -->
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#disduk">
+                                    <i class="fas fa-layer-group"></i>
+                                    <p>Disdukcapil</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="disduk">
+                                    <ul class="nav nav-collapse">
+                                        <li class="<?php if ($this->uri->segment(3) == "akte") {
+                                                            echo "nav-item active";
+                                                        } else {
+                                                            echo "nav-item ";
+                                                        } ?>">
+                                            <a href=" <?php echo base_url('Backend/disduk/akte') ?>">
+                                                <span class="sub-item">Data Akte Kelahiran</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+
+
+                        <!-- SETTING DAN USER MANAGEMENT -->
                         <li class="nav-item">
                             <a href="<?php echo base_url('login/logout') ?>">
                                 <i class="fas fa-sign-out-alt"></i>
