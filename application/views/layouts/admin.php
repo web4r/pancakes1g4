@@ -713,7 +713,7 @@
                             <div class="collapse" id="dinkes">
                                 <ul class="nav nav-collapse">
 
-                                    <li class="<?php if ($this->uri->segment(3) == "disdik_ahp") {
+                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_ahp") {
                                                     echo "nav-item active";
                                                 } else {
                                                     echo "nav-item ";
@@ -803,6 +803,189 @@
                                             <span class="sub-item">NAPZA </span>
                                         </a>
                                     </li>
+
+
+
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#dinsos">
+                                <i class="fas fa-layer-group"></i>
+                                <p>Dinsos</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="dinsos">
+                                <ul class="nav nav-collapse">
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_kkm") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_kkm') ?>">
+                                            <span class="sub-item">Kepala Keluarga Miskin</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_pendidikan") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_pendidikan') ?>">
+                                            <span class="sub-item">Data Penduduk Lansia Menurut Pendidikan</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_aktifitas") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_aktifitas') ?>">
+                                            <span class="sub-item">Data Penduduk Lansia Menurut Aktifitas</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_sakit") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_sakit') ?>">
+                                            <span class="sub-item">Data Penduduk Lansia yang sakit </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_dmp") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_dmp') ?>">
+                                            <span class="sub-item">Data Penyandang Disablitas Menurut Pendidikan </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_dma") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_dma') ?>">
+                                            <span class="sub-item">Data Penyandang Disablitas Menurut Aktifitas</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_jaj") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_jaj') ?>">
+                                            <span class="sub-item">Jumlah Anak Jalan</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_jta") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_jta') ?>">
+                                            <span class="sub-item">Jumlah Terlantar Anak </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinsos_abk") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinsos/dinsos_abk') ?>">
+                                            <span class="sub-item">Data Anak Berkebutuhan Khusus</span>
+                                        </a>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#bkpp">
+                                <i class="fas fa-layer-group"></i>
+                                <p>BKPP</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="bkpp">
+                                <ul class="nav nav-collapse">
+
+                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_pusat") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_pusat') ?>">
+                                            <span class="sub-item">Daftar Jumlah PNS Pusat</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_golongan") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_golongan') ?>">
+                                            <span class="sub-item">Daftar Jumlah PNS Pusat Menurut Golongan</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_kabupaten") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_kabupaten') ?>">
+                                            <span class="sub-item">Daftar Jumlah PNS Kabupaten</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_kab_gol") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_kab_gol') ?>">
+                                            <span class="sub-item">Daftar Jumlah PNS Kabupaten Menurut Golongan</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_camat") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_camat') ?>">
+                                            <span class="sub-item">Daftar Jumlah Camat Kabupaten Menurut Golongan</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "bkpp_desa") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/bkpp/bkpp_desa') ?>">
+                                            <span class="sub-item">Daftar Jumlah Kepala Desa/Kelurahan Kabupaten Menurut Golongan</span>
+                                        </a>
+                                    </li>
+
 
 
 
