@@ -606,13 +606,210 @@
                                             <span class="sub-item">Angka DPRD Kabupaten Menurut Komisi</span>
                                         </a>
                                     </li>
+                                </ul>
+                            </div>
+                        </li>
 
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#disdik">
+                                <i class="fas fa-layer-group"></i>
+                                <p>Disdik</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="disdik">
+                                <ul class="nav nav-collapse">
+
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_apk") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/disdik/disdik_apk') ?>">
+                                            <span class="sub-item">Angka Partisipasi Kasar (APK) Menurut Jenjang Pendidikan SD, SLTP dan SLTA</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_aps") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/disdik/disdik_aps') ?>">
+                                            <span class="sub-item">Angka Partisipasi Sekolah (APS) Menurut Kelompok Umur (7-12, 13-15 dan 16-18 tahun)</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_apm") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/disdik/disdik_apm') ?>">
+                                            <span class="sub-item">Angka Partisipasi Murni (APM) Menurut Jenjang Pendidikan SD, SLTP Dan SLTA</span>
+                                        </a>
+                                    </li>
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_jenjang") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/disdik/disdik_jenjang') ?>">
+                                            <span class="sub-item">Angka Putus Sekolah Menurut Jenjang Pendidikan SD, SLTP Dan SLTA</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_sertifikat") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/disdik/disdik_sertifikat') ?>">
+                                            <span class="sub-item">Angka Sertifikat Guru SD, SLTP Dan SLTA</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_paket") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/disdik/disdik_paket') ?>">
+                                            <span class="sub-item">Angka Lulus Paket SD, SLTP Dan SLTA</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_sekolah") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/disdik/disdik_sekolah') ?>">
+                                            <span class="sub-item">Rata-Rata Lama Sekolah</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_pt") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/disdik/disdik_pt') ?>">
+                                            <span class="sub-item">Angka Data Pendididkan Beasiswa SLTA dan Perguruan Tinggi</span>
+                                        </a>
+                                    </li>
 
 
                                 </ul>
                             </div>
                         </li>
 
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#dinkes">
+                                <i class="fas fa-layer-group"></i>
+                                <p>Dinkes</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="dinkes">
+                                <ul class="nav nav-collapse">
+
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_ahp") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_ahp') ?>">
+                                            <span class="sub-item">Angka Harapan Hidup</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_kim") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_kim') ?>">
+                                            <span class="sub-item">Jumlah Kematian Ibu Melahirkan</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_pkim") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_pkim') ?>">
+                                            <span class="sub-item">Penyebab Kematian Ibu Melahirkan</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "disdik_cpp") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_cpp') ?>">
+                                            <span class="sub-item">Cakupan Pertolongan Persalinan</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_kih") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_kih') ?>">
+                                            <span class="sub-item">Kunjungan Ibu Hamil (K1/K4) </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_tetanus") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_tetanus') ?>">
+                                            <span class="sub-item">Imunisasi Tetanus </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_zat") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_zat') ?>">
+                                            <span class="sub-item">Pemberian Zat Besi </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_kb") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_kb') ?>">
+                                            <span class="sub-item">Keluarga Berencana </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="<?php if ($this->uri->segment(3) == "dinkes_napza") {
+                                                    echo "nav-item active";
+                                                } else {
+                                                    echo "nav-item ";
+                                                } ?>">
+                                        <a href=" <?php echo base_url('Backend/dinkes/dinkes_napza') ?>">
+                                            <span class="sub-item">NAPZA </span>
+                                        </a>
+                                    </li>
+
+
+
+
+                                </ul>
+                            </div>
+                        </li>
 
 
                         <li class="nav-section">
