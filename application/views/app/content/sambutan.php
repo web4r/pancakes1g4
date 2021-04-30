@@ -12,7 +12,7 @@
                             <div class="col-md-6">
                                 <h5 class="card-title mb-2 fw-mediumbold">
                                     Kata Sambutan</h5>
-                                <p class="card-text">
+                                <p class="card-text text-justify">
 
 
                                     Puji syukur kehadirat Allah SWT, atas terlaksananya Upgrading Website SIGADIS. Semoga kehadirannya mampu menggambarkan secara dinamis Data Dan Informasi Gender/Anak serta Pengaduan kekerasan terhadap perempuan/Anak baik berupa kekerasan terhadap perempuan, trafficking, Kekerasan Dalam rumah Tangga (KDRT) dan Kekerasan terhadap Anak (KTA) di Kabupaten Bogor. Kami menyadari keterbatasan dan kekurangan dalam pembuatan dan pengelolaan Website ini sehingga saran dan masukan dari pihak – pihak masih diperlukan demi kesempurnaan di waktu yang akan datang.<br>
