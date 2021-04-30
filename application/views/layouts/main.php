@@ -13,97 +13,35 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/atlantis2.css') ?>">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <style>
+        body * {
+            font-family: 'Krona One', sans-serif;
+
+        }
+    </style>
 </head>
 
 <body>
     <div class="wrapper horizontal-layout-3">
 
-        <div class="main-header no-box-shadow" data-background-color="blue2">
-            <div class="nav-top">
-                <div class="container d-flex flex-row">
-                    <button class="navbar-toggler sidenav-toggler2 ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                            <i class="icon-menu"></i>
-                        </span>
-                    </button>
-
-                    <!-- Logo Header -->
-                    <a href="<?php echo base_url() ?>" class="logo d-flex align-items-center">
-                        <!-- <img src="<?php echo base_url() ?>assets/img/logo.svg" alt="navbar brand" class="navbar-brand"> -->
-                        <h5 class="text-white">SIGADIS Kab.Bogor</h5>
-                    </a>
-                    <!-- End Logo Header -->
-
-                    <!-- Navbar Header -->
-                    <nav class="navbar navbar-header-left navbar-expand-lg p-0">
-                        <ul class="navbar-nav page-navigation pl-md-3">
-                            <h3 class="title-menu d-flex d-lg-none">
-                                Menu
-                                <div class="close-menu"> <i class="flaticon-cross"></i></div>
-                            </h3>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">
-                                    Beranda
-                                </a>
-
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Data Terpilah
-                                </a>
-                                <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="projects.html">P2TP2A</a>
-                                    <a class="dropdown-item" href="<?php echo base_url() ?>Frontend/disnaker">DINAS KETENAGAKERJAAN</a>
-                                    <a class="dropdown-item" href="projects.html">DINAS SOSIAL</a>
-                                    <a class="dropdown-item" href="email-inbox.html">DINAS KESEHATAN</a>
-                                    <a class="dropdown-item" href="email-detail.html">DINAS PENDIDIKAN</a>
-                                    <a class="dropdown-item" href="email-compose.html">SETWAN</a>
-                                    <a class="dropdown-item" href="messages.html">KEJAKSAAN NEGERI CIBINONG</a>
-                                    <a class="dropdown-item" href="conversations.html">PENGADILAN NEGERI CIBINONG</a>
-                                    <a class="dropdown-item" href="conversations.html">PENGADILAN AGAMA CIBINONG</a>
-                                    <a class="dropdown-item" href="conversations.html">POLRES BOGOR</a>
-                                    <a class="dropdown-item" href="conversations.html">BKPP KAB.BOGOR</a>
-                                    <a class="dropdown-item" href="conversations.html">KESBANGPOL KAB.BOGOR</a>
-                                    <a class="dropdown-item" href="conversations.html">LAPAS</a>
-                                    <a class="dropdown-item" href="conversations.html">BPBD KAB.BOGOR</a>
-                                    <a class="dropdown-item" href="conversations.html">DISDUKCAPIL KAB.BOGOR</a>
-                                    <a class="dropdown-item" href="conversations.html">DATA PEKKA</a>
-                                    <a class="dropdown-item" href="conversations.html">IDG</a>
-                                    <a class="dropdown-item" href="conversations.html">IPG</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Perlindungan Anak
-                                </a>
-
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Data Tambahan
-                                </a>
-                                <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="starter-template.html">P2WKSS</a>
-                                    <a class="dropdown-item" href="starter-template.html">PEMENANGAN APE</a>
-                                    <a class="dropdown-item" href="starter-template.html">INDUSTRI RUMAHAN</a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://geoportal.bogorkab.go.id/bogapeta/apps/opsdashboard/index.html#/1044ff99ce5a49f1a7ae7a9cc533ec01">
-                                    Geoportal
-                                </a>
-
-                            </li>
-
-                        </ul>
-                    </nav>
-
-                    <!-- End Navbar -->
+        <!-- <div class="main-header no-box-shadow" data-background-color="blue2"> -->
+        <div class="bg-info2 pt-4 pb-5">
+            <div class="container text-white py-2">
+                <div class="d-flex align-items-center">
+                    <div class="mr-3">
+                        <h1 class="mb-3" style="  font-family: 'Krona One', sans-serif !important;">SIGADIS</h1>
+                        <h5 class="op-7 mb-3">SISTEM INFORMASI PENGADUAN DAN DATA INFORMASI GENDERS.</h5>
+                    </div>
                 </div>
+                <a href="<?php echo base_url() ?>" class="btn btn-danger btn-round">Beranda</a>
+                <a href="<?php echo base_url() ?>login" class="btn btn-secondary btn-round">Login</a>
             </div>
         </div>
+        <!-- </div> -->
 
         <div class="main-panel">
 
@@ -217,9 +155,7 @@
     <script src="<?php echo base_url('assets/js/plugin/webfont/webfont.min.js') ?>"></script>
     <script>
         WebFont.load({
-            google: {
-                "families": ["Lato:300,400,700,900"]
-            },
+
             custom: {
                 "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"],
                 urls: ['<?php echo base_url() ?>assets/css/fonts.min.css']
