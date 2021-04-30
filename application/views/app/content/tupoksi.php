@@ -25,14 +25,14 @@
 
                         </ul>
                         <div class="tab-content mt-2 mb-3" id="pills-tabContent">
-                            <div class="tab-pane fade text-justify show active" id="pills-tugas" role="tabpanel" aria-labelledby="pills-tugas-tab">
+                            <div class="tab-pane fade text-left show active" id="pills-tugas" role="tabpanel" aria-labelledby="pills-tugas-tab">
                                 <p>
                                     Membantu Bupati dalam melaksanakan penyusunan dan pelaksanaan kebijakan daerah di bidang pemberdayaan perempuan dan keluarga berencana.Badan Pemberdayaan Perempuan dan Keluarga Berencana
                                 </p>
 
 
                             </div>
-                            <div class="tab-pane fade text-justify" id="pills-fungsi" role="tabpanel" aria-labelledby="pills-fungsi-tab">
+                            <div class="tab-pane fade text-left" id="pills-fungsi" role="tabpanel" aria-labelledby="pills-fungsi-tab">
                                 <h2>Kebijakan</h2>
                                 <p>
                                     Perumusan kebijakan teknis dibidang Pemberdayaan Perempuan dan Keluarga Berencana.
@@ -55,7 +55,7 @@
                                 <br>
                             </div>
 
-                            <div class="tab-pane fade text-justify show" id="pills-visi" role="tabpanel" aria-labelledby="pills-visi-tab">
+                            <div class="tab-pane fade text-left show" id="pills-visi" role="tabpanel" aria-labelledby="pills-visi-tab">
                                 <p>
                                     Terwujudnya Kesetaraan Gender , perlindungan Perempuan dan anak serta keluarga kecil sejahtera
                                 </p>
@@ -63,7 +63,7 @@
 
                             </div>
 
-                            <div class="tab-pane fade text-justify show" id="pills-misi" role="tabpanel" aria-labelledby="pills-misi-tab">
+                            <div class="tab-pane fade text-left show" id="pills-misi" role="tabpanel" aria-labelledby="pills-misi-tab">
                                 <p>
                                     Meningkatkan kualitas hidup dan perlindungan perempuan Meningkatkan kesejahteraan dan perlindungan anak Meningkatkan pelayanan KB dan kesehatan reproduksi Meningkatkan Pembangunan keluarga Sejahtera.
                                 </p>
