@@ -22,25 +22,14 @@
                         } else {
                             $jk = "P";
                         }
-                        $status_pendidikan = $p2tp2a->pendidikan;
-                        if ($status_pendidikan == 1) {
-                            $pendidkan = "Belum Sekolah";
-                        } elseif ($status_pendidikan == 2) {
-                            $pendidkan = "SD";
-                        } elseif ($status_pendidikan == 3) {
-                            $pendidkan = "SMP";
-                        } elseif ($status_pendidikan == 4) {
-                            $pendidkan = "SMA";
-                        } elseif ($status_pendidikan == 5) {
-                            $pendidkan = "PT";
-                        }
+                        
                         ?>
                         <li class="list-group-item">Tanggal Pelaporan : <?php echo $p2tp2a->tgl_laporan ?></li>
                         <li class="list-group-item">Initial : <?php echo $p2tp2a->initial ?></li>
                         <li class="list-group-item">Alamat : <?php echo $p2tp2a->alamat ?></li>
                         <li class="list-group-item">Jenis Kelamin : <?php echo $jk ?></li>
                         <li class="list-group-item">Usia : <?php echo $p2tp2a->usia ?></li>
-                        <li class="list-group-item">Pendidikan : <?php echo $pendidkan ?></li>
+                        <li class="list-group-item">Pendidikan : <?php echo $p2tp2a->jenis_pendidikan ?></li>
                         <li class="list-group-item">Jenis Kekerasan : <?php echo $p2tp2a->jenis_kekerasan ?></li>
 
                     </ul>

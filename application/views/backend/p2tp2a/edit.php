@@ -51,24 +51,14 @@
                             <input name="usia" type="number" class="form-control" value="<?php echo $p2tp2a->usia ?>">
                         </div>
                         <div class="form-group form-group-default">
-                            <label>Pendidikan</label>
-
-                            <?php
-
-                            $data = array(
-                                '1' => 'Belum Sekolah',
-                                '2' => 'SD',
-                                '3' => 'SMP',
-                                '4' => 'SMA',
-                                '5' => 'PT',
-
-
-
-                            );
-                            echo form_dropdown('pendidikan', $data, set_value('pendidikan', $p2tp2a->pendidikan), array('class' => 'form-control'));
-                            ?>
-
-
+                            <label>Jenis Pendidikan</label>
+                            <select name="id_kat_kekerasan" class="form-control" id="formGroupDefaultSelect">
+                                <?php foreach ($kat_pendidikan as $data) { ?>
+                                    <option value="<?php echo $data->id_kat_pendidikan ?>" <?php if ($data->id_kat_pendidikan == $p2tp2a->id_kat_pendidikan) {
+                                                                                                    echo "selected";
+                                                                                                } ?>><?php echo $data->jenis_pendidikan ?></option>
+                                <?php } ?>
+                            </select>
                         </div>
                         <div class="form-group form-group-default">
                             <label>Jenis Kekerasan</label>

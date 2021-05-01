@@ -32,6 +32,8 @@
 <body class="login">
     <div class="wrapper wrapper-login">
         <div class="container container-login animated fadeIn">
+
+
             <h3 class="text-center">Login Dashboard</h3>
             <?php if ($this->session->flashdata('login_success')) : ?>
                 <div class="alert alert-success">
@@ -93,10 +95,13 @@
                         </div>
                     </div>
                     <div class="form-action mb-3">
-                        <button type="submit" class="btn btn-primary btn-rounded btn-login">Login</button>
-
+                        <button type="submit" class="btn btn-primary btn-rounded btn-block ">Login</button>
+                        <a href="<?php echo base_url() ?>" class="btn btn-outline-dark btn-rounded btn-block">
+                            <i class="fas fa-arrow-circle-left"></i> Beranda
+                        </a>
                     </div>
                 </form>
+
 
             </div>
         </div>

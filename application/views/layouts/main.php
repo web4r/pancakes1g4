@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/atlantis2.css') ?>">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <style>
         body * {
-            font-family: 'Krona One', sans-serif;
+            font-family: 'Montserrat', sans-serif;
 
         }
     </style>
@@ -28,20 +28,20 @@
 <body>
     <div class="wrapper horizontal-layout-3">
 
-        <!-- <div class="main-header no-box-shadow" data-background-color="blue2"> -->
-        <div class="bg-info2 pt-4 pb-5">
+
+
+        <div class="bg-primary-gradient pt-4 pb-5">
             <div class="container text-white py-2">
                 <div class="d-flex align-items-center">
                     <div class="mr-3">
-                        <h1 class="mb-3" style="  font-family: 'Krona One', sans-serif !important;">SIGADIS</h1>
+                        <h1 class="mb-3">SIGADIS</h1>
                         <h5 class="op-7 mb-3">SISTEM INFORMASI PENGADUAN DAN DATA INFORMASI GENDERS.</h5>
                     </div>
                 </div>
                 <a href="<?php echo base_url() ?>" class="btn btn-danger btn-round">Beranda</a>
-                <a href="<?php echo base_url() ?>login" class="btn btn-secondary btn-round">Login</a>
+                <a href="<?php echo base_url() ?>login" class="btn btn-dark btn-round">Login</a>
             </div>
         </div>
-        <!-- </div> -->
 
         <div class="main-panel">
 
@@ -49,7 +49,7 @@
         </div>
         <footer class="footer">
             <div class="container">
-                <nav class="pull-left">
+                <!-- <nav class="pull-left">
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link" href="http://www.themekita.com">
@@ -67,9 +67,9 @@
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
                 <div class="copyright ml-auto">
-                    2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="http://www.themekita.com">ThemeKita</a>
+                    Copyright <?php echo date('Y') ?>, <i class="fa fa-heart heart text-danger"></i> by <a href="#">SIGADIS Kabupaten Bogor</a>
                 </div>
             </div>
         </footer>
@@ -108,42 +108,10 @@
     <!-- Bootstrap Toggle -->
     <script src="<?php echo base_url() ?>assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
 
-    <!-- jQuery Vector Maps -->
-    <script src="<?php echo base_url() ?>assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
-    <script src="<?php echo base_url() ?>assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
-
-    <!-- Google Maps Plugin -->
-    <script src="<?php echo base_url() ?>assets/js/plugin/gmaps/gmaps.js"></script>
-
-    <!-- Dropzone -->
-    <script src="<?php echo base_url() ?>assets/js/plugin/dropzone/dropzone.min.js"></script>
-
-    <!-- Fullcalendar -->
-    <script src="<?php echo base_url() ?>assets/js/plugin/fullcalendar/fullcalendar.min.js"></script>
-
-    <!-- DateTimePicker -->
-    <script src="<?php echo base_url() ?>assets/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
-
-    <!-- Bootstrap Tagsinput -->
-    <script src="<?php echo base_url() ?>assets/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
-
-    <!-- Bootstrap Wizard -->
-    <script src="<?php echo base_url() ?>assets/js/plugin/bootstrap-wizard/bootstrapwizard.js"></script>
-
-    <!-- jQuery Validation -->
-    <script src="<?php echo base_url() ?>assets/js/plugin/jquery.validate/jquery.validate.min.js"></script>
-
-    <!-- Summernote -->
-    <script src="<?php echo base_url() ?>assets/js/plugin/summernote/summernote-bs4.min.js"></script>
 
     <!-- Select2 -->
     <script src="<?php echo base_url() ?>assets/js/plugin/select2/select2.full.min.js"></script>
 
-    <!-- Sweet Alert -->
-    <script src="<?php echo base_url() ?>assets/js/plugin/sweetalert/sweetalert.min.js"></script>
-
-    <!-- Owl Carousel -->
-    <script src="<?php echo base_url() ?>assets/js/plugin/owl-carousel/owl.carousel.min.js"></script>
 
     <!-- Magnific Popup -->
     <script src="<?php echo base_url() ?>assets/js/plugin/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
@@ -170,6 +138,64 @@
         $(document).ready(function() {
             $('#basic-datatables').DataTable({});
 
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: "http://localhost/sigadisrest/api/data/test",
+                method: "GET",
+                success: function(data) {
+                    console.log(data);
+                    var label = [];
+                    var value = [];
+                    for (var i in data) {
+                        label.push(data[i].jenis_kekerasan);
+                        value.push(data[i].jumlahdata);
+                    }
+                    var ctx = document.getElementById('lineChart').getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: label,
+                            datasets: [{
+                                label: 'Jumlah Kasus',
+                                data: [12, 19, 3, 5, 2, 3],
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(255, 206, 86, 0.2)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(255, 159, 64, 0.2)'
+                                ],
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)'
+                                ],
+                                borderWidth: 1,
+                                data: value
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero: true
+                                    }
+                                }]
+                            },
+                        }
+                    });
+
+
+                }
+            });
         });
     </script>
 

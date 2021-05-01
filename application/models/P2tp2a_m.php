@@ -6,12 +6,17 @@ class P2tp2a_m extends CI_Model
     {
         return $this->db->get('tm_kat_kekerasan')->result();
     }
+    public function get_kat_pendidikan()
+    {
+        return $this->db->get('tm_kat_pendidikan')->result();
+    }
 
     public function get_all()
     {
         $this->db->select('*');
         $this->db->from('tm_p2tp2a');
         $this->db->join('tm_kat_kekerasan', 'tm_kat_kekerasan.id_kat_kekerasan = tm_p2tp2a.id_kat_kekerasan', 'inner');
+        $this->db->join('tm_kat_pendidikan', 'tm_kat_pendidikan.id_kat_pendidikan = tm_p2tp2a.id_kat_pendidikan', 'inner');
         $query = $this->db->get()->result();
         return $query;
     }
@@ -36,6 +41,7 @@ class P2tp2a_m extends CI_Model
         $this->db->select('*');
         $this->db->from('tm_p2tp2a');
         $this->db->join('tm_kat_kekerasan', 'tm_kat_kekerasan.id_kat_kekerasan = tm_p2tp2a.id_kat_kekerasan', 'inner');
+        $this->db->join('tm_kat_pendidikan', 'tm_kat_pendidikan.id_kat_pendidikan = tm_p2tp2a.id_kat_pendidikan', 'inner');
         $this->db->where('tm_p2tp2a.id_p2tp2a', $id_p2tp2a);
         $result  = $this->db->get();
         if ($result->num_rows() > 0) {

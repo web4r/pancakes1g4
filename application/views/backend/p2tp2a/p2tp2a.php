@@ -47,14 +47,12 @@
                                         <label>Usia</label>
                                         <input name="usia" type="number" class="form-control" placeholder="usia" required="required">
                                     </div>
-                                    <div class="form-group form-group-default">
-                                        <label>Pendidikan</label>
-                                        <select name="pendidikan" class="form-control" id="formGroupDefaultSelect">
-                                            <option value="1">Belum Sekolah</option>
-                                            <option value="2">SD</option>
-                                            <option value="3">SMP</option>
-                                            <option value="4">SMA</option>
-                                            <option value="5">PT</option>
+                                   <div class="form-group form-group-default">
+                                        <label>Jenis Pendidikan</label>
+                                        <select name="id_kat_pendidikan" class="form-control" id="formGroupDefaultSelect">
+                                            <?php foreach ($kat_pendidikan as $data) { ?>
+                                                <option value="<?php echo $data->id_kat_pendidikan ?>"><?php echo $data->jenis_pendidikan ?></option>
+                                            <?php } ?>
                                         </select>
                                     </div>
                                     <div class="form-group form-group-default">
@@ -68,8 +66,8 @@
 
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
                                     <button type="submit" class="btn btn-primary">Simpan Data</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
                                 </div>
                             </form>
                         </div>
@@ -114,7 +112,7 @@
             <div class="card full-height">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table table-bordered table-head-bg-info table-bordered-bd-info">
+                        <table id="basic-datatables" class="table table-bordered table-head-bg-info">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -132,7 +130,7 @@
                                     ?>
                                     <tr>
                                         <td><?php echo $num++ ?></td>
-                                        <td><?php echo $data->tgl_laporan ?></td>
+                                        <td><?php echo date('d-m-Y', strtotime($data->tgl_laporan)) ?></td>
                                         <td><?php echo $data->initial ?></td>
                                         <td><?php echo $data->jenis_kekerasan ?></td>
 

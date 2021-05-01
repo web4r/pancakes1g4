@@ -20,7 +20,7 @@ class P2tp2a extends CI_Controller
     {
         $data['p2tp2a'] = $this->P2tp2a_m->get_all();
         $data['kat_kekerasan'] = $this->P2tp2a_m->get_kat_kekerasan();
-
+        $data['kat_pendidikan'] = $this->P2tp2a_m->get_kat_pendidikan();
         $data['backend_page'] = "backend/p2tp2a/p2tp2a";
         $this->load->view('layouts/admin', $data);
     }
@@ -61,7 +61,7 @@ class P2tp2a extends CI_Controller
 
     public function edit($id_p2tp2a)
     {
-
+$data['kat_pendidikan'] = $this->P2tp2a_m->get_kat_pendidikan();
         $data['kat_kekerasan'] = $this->P2tp2a_m->get_kat_kekerasan();
         $data['p2tp2a'] = $this->P2tp2a_m->getById($id_p2tp2a);
 

@@ -2061,7 +2061,12 @@
             }
         });
     </script>
+    <script>
+        $(document).ready(function() {
+            $('#basic-datatables').DataTable({});
 
+        });
+    </script>
 
     <script>
         Circles.create({

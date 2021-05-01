@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h1 class="card-title text-center">TUPOKSI</h1>
+                        <h1 class="card-title text-center">TUPOKSI DAN VISI MISI</h1>
                     </div>
                     <div class="card-body">
                         <ul class="nav nav-pills nav-primary" id="pills-tab" role="tablist">
