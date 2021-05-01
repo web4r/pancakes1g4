@@ -44,15 +44,16 @@
 
 
             <div class="col-sm-6 col-md-6  col-lg-3">
-
-                <div class="card  animated fadeInDown bg-danger-gradient">
-                    <div class="card-body">
-                        <div class="text-center text-white">
-                            <i class="fas fa-child fa-5x"></i>
-                            <h6>Perlindungan Anak</h6>
+                <a href="#" class="nav-link">
+                    <div class="card  animated fadeInDown bg-danger-gradient">
+                        <div class="card-body">
+                            <div class="text-center text-white">
+                                <i class="fas fa-child fa-5x"></i>
+                                <h6>Perlindungan Anak</h6>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
         </div>
@@ -73,15 +74,16 @@
 
 
             <div class="col-sm-6 col-md-6  col-lg-3">
-
-                <div class="card  animated fadeInDown bg-warning-gradient">
-                    <div class="card-body">
-                        <div class="text-center text-white ">
-                            <i class="fas fa-database fa-5x"></i>
-                            <h6>Data Tambahan</h6>
+                <a href="#" class="nav-link">
+                    <div class="card  animated fadeInDown bg-warning-gradient">
+                        <div class="card-body">
+                            <div class="text-center text-white ">
+                                <i class="fas fa-database fa-5x"></i>
+                                <h6>Data Tambahan</h6>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
 
