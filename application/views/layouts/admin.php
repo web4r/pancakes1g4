@@ -1017,6 +1017,18 @@
 
                                     </a>
                                 </li>
+
+                                <li class="<?php if ($this->uri->segment(2) == "api") {
+                                                        echo "nav-item active";
+                                                    } else {
+                                                        echo "nav-item ";
+                                                    } ?>">
+                                    <a href="<?php echo base_url('Admin/api') ?>">
+                                        <i class="fas fa-link"></i>
+                                        <p>API</p>
+
+                                    </a>
+                                </li>
                             <?php endif; ?>
                         <?php endif; ?>
 

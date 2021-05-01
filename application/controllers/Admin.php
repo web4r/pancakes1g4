@@ -22,6 +22,13 @@ class Admin extends CI_Controller
         $this->load->view('layouts/admin', $data);
     }
 
+    public function api()
+    {
+        $data['api_list'] = $this->Api_m->get_all();
+        $data['backend_page'] = "backend/api/api";
+        $this->load->view('layouts/admin', $data);
+    }
+
     public function users()
     {
         $data['role'] = $this->Users_m->get_all_role();

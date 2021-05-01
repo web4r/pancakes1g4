@@ -149,4 +149,5 @@ $autoload['model'] = array(
     'Dinkes_m',
     'Dinsos_m',
     'Bkpp_m',
+    'Api_m',
 );
