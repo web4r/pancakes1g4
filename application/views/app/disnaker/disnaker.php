@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-2">
-                            <div class="nav flex-column nav-pills nav-primary nav-pills-no-bd" id="v-pills-tab-without-border" role="tablist" aria-orientation="vertical">
+                            <div class="nav flex-column nav-pills nav-primary nav-pills" id="v-pills-tab-without-border" role="tablist" aria-orientation="vertical">
                                 <a class="nav-link active" id="v-pills-tpak-tab-nobd" data-toggle="pill" href="#v-pills-tpak-nobd" role="tab" aria-controls="v-pills-tpak-nobd" aria-selected="true">Tingkat Partisipasi Angkatan Kerja (TPAK)</a>
                                 <a class="nav-link" id="v-pills-kkm-tab-nobd" data-toggle="pill" href="#v-pills-kkm-nobd" role="tab" aria-controls="v-pills-kkm-nobd" aria-selected="false">Kepala Keluarga Miskin</a>
                                 <a class="nav-link" id="v-pills-akad-tab-nobd" data-toggle="pill" href="#v-pills-akad-nobd" role="tab" aria-controls="v-pills-akad-nobd" aria-selected="false">Tenaga Kerja Migran Antar Kerja Antar Daerah (AKAD)</a>
