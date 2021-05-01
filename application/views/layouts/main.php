@@ -144,7 +144,7 @@
     <script>
         $(document).ready(function() {
             $.ajax({
-                url: "http://103.41.207.48/sigadisrest/api/data/p2tp2a",
+                url: "http://103.41.207.48/sigadisrest/api/data/statistic_p2tp2a",
                 method: "GET",
                 success: function(data) {
                     console.log(data);
