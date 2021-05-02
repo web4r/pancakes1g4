@@ -136,7 +136,44 @@
 
     <script>
         $(document).ready(function() {
+            // disnaker
             $('#basic-datatables').DataTable({});
+            $('#kkm').DataTable({});
+            $('#akad').DataTable({});
+            $('#akan').DataTable({});
+            $('#formal').DataTable({});
+            $('#informal').DataTable({});
+            $('#umk').DataTable({});
+            $('#koperasi').DataTable({});
+            $('#kredit').DataTable({});
+            $('#jpa').DataTable({});
+            $('#jpata').DataTable({});
+            $('#djsp').DataTable({});
+
+            // dinsos
+            $('#dinsos_kkm').DataTable({});
+            $('#dinsos_pendidikan').DataTable({});
+            $('#dinsos_aktifitas').DataTable({});
+            $('#dinsos_sakit').DataTable({});
+            $('#dinsos_dmp').DataTable({});
+            $('#dinsos_dma').DataTable({});
+            $('#dinsos_jaj').DataTable({});
+            $('#dinsos_jta').DataTable({});
+            $('#dinsos_abk').DataTable({});
+
+            // dinkes
+            $('#dinkes_ahp').DataTable({});
+            $('#dinkes_kim').DataTable({});
+            $('#dinkes_pkim').DataTable({});
+            // $('#dinkes_cpp').DataTable({});
+            // $('#dinkes_kih').DataTable({});
+            $('#dinkes_tetanus').DataTable({});
+            // $('#dinkes_zat').DataTable({});
+            // $('#dinkes_kb').DataTable({});
+            // $('#dinkes_napza').DataTable({});
+
+
+
 
         });
     </script>
@@ -144,7 +181,7 @@
     <script>
         $(document).ready(function() {
             $.ajax({
-                url: "http://103.41.207.48/sigadisrest/api/data/statistic_p2tp2a",
+                url: "http://localhost/sigadisrest/api/data/statistic_p2tp2a",
                 method: "GET",
                 success: function(data) {
                     console.log(data);

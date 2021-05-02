@@ -1298,7 +1298,7 @@
                                         </li>
 
 
-                                        <li class="<?php if ($this->uri->segment(3) == "disdik_kim") {
+                                        <li class="<?php if ($this->uri->segment(3) == "dinkes_kim") {
                                                             echo "nav-item active";
                                                         } else {
                                                             echo "nav-item ";

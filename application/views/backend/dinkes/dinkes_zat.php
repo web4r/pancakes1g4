@@ -37,11 +37,11 @@
                                     </div>
 
                                     <div class="form-group form-group-default">
-                                        <label>K1</label>
+                                        <label>FE1</label>
                                         <input name="fe1" type="text" class="form-control">
                                     </div>
                                     <div class="form-group form-group-default">
-                                        <label>K4</label>
+                                        <label>FE3</label>
                                         <input name="fe3" type="text" class="form-control">
                                     </div>
 

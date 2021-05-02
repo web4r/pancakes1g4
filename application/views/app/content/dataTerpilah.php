@@ -1,4 +1,4 @@
-<div class="container mt--5">
+<div class="container mt-5">
 
     <div class="row">
 
@@ -16,7 +16,7 @@
         </div>
 
         <div class="col-sm-6 col-md-6 col-lg-3">
-            <a href="<?php echo base_url() ?>Frontend/Disnaker" class="nav-link">
+            <a href="<?php echo base_url() ?>Frontend/Dinsos" class="nav-link">
                 <div class="card bg-black-gradient">
                     <div class="card-body">
                         <div class="text-center text-white">
@@ -29,7 +29,7 @@
         </div>
 
         <div class="col-sm-6 col-md-6 col-lg-3">
-            <a href="<?php echo base_url() ?>Frontend/Disnaker" class="nav-link">
+            <a href="<?php echo base_url() ?>Frontend/Dinkes" class="nav-link">
                 <div class="card bg-black-gradient">
                     <div class="card-body">
                         <div class="text-center text-white">
@@ -42,7 +42,7 @@
         </div>
 
         <div class="col-sm-6 col-md-6 col-lg-3">
-            <a href="<?php echo base_url() ?>Frontend/Disnaker" class="nav-link">
+            <a href="<?php echo base_url() ?>Frontend/Disdik" class="nav-link">
                 <div class="card bg-black-gradient">
                     <div class="card-body">
                         <div class="text-center text-white">
