@@ -34,7 +34,7 @@
             <div class="container text-white py-2">
                 <div class="d-flex align-items-center">
                     <div class="mr-3">
-                        <h1 class="mb-3">SIGADIS</h1>
+                        <h1 class="mb-3">SIGADIS test</h1>
                         <h5 class="op-7 mb-3">SISTEM INFORMASI PENGADUAN DAN DATA INFORMASI GENDERS.</h5>
                     </div>
                 </div>
